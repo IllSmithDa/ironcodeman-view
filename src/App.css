@@ -1,4 +1,6 @@
-
+body {
+  background:linear-gradient(-90deg, red, yellow)
+}
 .App-message-container {
   margin-top: 5em;
   margin-left: 44em;
