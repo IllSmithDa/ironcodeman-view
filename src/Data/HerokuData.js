@@ -40,6 +40,11 @@ const HerokuData = [
     command: "heroku ps:scale web=1 --app appname",
     description: "sets heroku app appname to 1 running dyno or 1 server allowing public access to app"
   },
+  {
+    type: "Heroku Intro",
+    command: "heroku domains:add yourdomain.com",
+    description: "Adds the custom domain 'yourdomain.com' to your heroku app"
+  },
 ];
 
 export default HerokuData;
