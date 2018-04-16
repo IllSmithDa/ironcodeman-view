@@ -28,7 +28,7 @@ const CommandData = [
   { 
     type: "Command Intro",
     command: "mkdir folderName",
-    description: "creates a new directory/folder in the current directory/folder" 
+    description: "creates a folder called folderName in the current directory" 
   },
   { 
     type: "Command File Linux",
@@ -68,12 +68,12 @@ const CommandData = [
   {
     type: "Command File Windows",
     command: "del filename",
-    description: "Deletes File called fileName and works for windows command line. Does not work in Unix command line"
+    description: "Deletes File called 'fileName'"
   },
   {
     type: "Command File Windows",
     command: "del /f filename",
-    description: "Force delete file called fileName on windows command line. Does note work with Unix"
+    description: "Force delete file 'called fileName'"
   }, 
   {
     type: "Command File Windows",
@@ -83,22 +83,22 @@ const CommandData = [
   {
     type: "Command File Windows",
     command: "move filename.txt folderName",
-    description: "moves the filename.txt to the directory folderName which exists right inside current directory"
+    description: "moves the filename.txt to the directory 'folderName' which exists right inside current directory"
   },
   {
     type: "Command File Windows",
     command: "move folder1 folder2",
-    description: "Moves folder1 and all its contents into folder2 and both exist in current directory"
+    description: "Moves 'folder1' and all its contents into 'folder2' and both exist in current directory"
   },
   {
     type: "Command File Windows",
     command: "copy fileName.txt C:\Filepath",
-    description: "Copies fileName.txt into the directory path C:\Filepath"
+    description: "Copies 'fileName.txt' into the directory path C:\Filepath"
   },
   {
     type: "Command File Windows",
     command: "copy fileName.txt folderName",
-    description: "Copies fileName.txt into the folder 'folderName' which is under current directory"
+    description: "Copies 'fileName.txt' into the folder 'folderName' which is under current directory"
   },
   {
     type: "Command File Windows",
