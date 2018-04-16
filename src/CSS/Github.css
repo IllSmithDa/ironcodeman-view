@@ -1,0 +1,21 @@
+
+.Github-title-container {
+  margin-top: 5em;
+  text-align: center;
+}
+.Github-table-header {
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+.Git-number-container {
+  width: 10em;
+}
+.Github-table-container {
+  width: 100em;
+  margin-left: 10em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  border: black solid 0.1em;
+  background-color: aliceblue;
+}
