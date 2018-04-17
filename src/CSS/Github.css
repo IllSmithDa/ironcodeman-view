@@ -1,3 +1,6 @@
+.Github {
+  width: 100%;
+}
 .Github-title-container {
   margin-top: 5em;
   text-align: center;
@@ -16,9 +19,6 @@
   border: black solid 0.1em;
   background-color: aliceblue;
 }
-.Github {
-  width: 100%;
-}
 
 @media all and (max-width: 767px) {
   .Github-table-container {
@@ -29,4 +29,8 @@
     border: black solid 0.1em;
     background-color: aliceblue;
   }
+  .Github-command-item {
+    font-size: 10px;
+  }
+  
 }
