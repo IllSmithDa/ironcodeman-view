@@ -29,7 +29,7 @@ export default class Github extends Component {
       <div>
         <Navbar />
         <div className="Github-title-container">
-          <h1>Heroku</h1>
+          <h1><b>Heroku</b></h1>
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">

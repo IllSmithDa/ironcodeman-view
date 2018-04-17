@@ -41,7 +41,7 @@ export default class Github extends Component {
       <div className="Github">
         <Navbar />
         <div className="Github-title-container">
-          <h1>Git</h1>
+          <h1><b>Git</b></h1>
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">

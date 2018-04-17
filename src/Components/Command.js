@@ -36,7 +36,7 @@ export default class Command extends Component {
       <div>
         <Navbar />  
         <div className="Github-title-container">
-          <h1>Basic Command Lines</h1>
+          <h1><b>Basic Command Lines</b></h1>
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
