@@ -14,15 +14,15 @@
   width: 10em;
 }
 .Github-table-container {
-  width: 95%;
-  margin-top: 2em;
-  margin-left: 3em;
+  width: 94%;
+  margin-top: 1%;
+  margin-left: 3%;
   margin-bottom: 4em;
   border: black solid 0.1em;
   background-color: aliceblue;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 800px) {
   .Github-table-container {
     margin: 0em;
     margin-top: 2em;
