@@ -19,3 +19,11 @@
 .Github {
   width: 100%;
 }
+
+@media all and (max-width: 767px) {
+  .Github-table-container {
+    width: 100%;
+    border: black solid 0.1em;
+    background-color: aliceblue;
+  }
+}
