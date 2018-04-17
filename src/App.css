@@ -20,7 +20,7 @@ body {
   margin-bottom: 2em;
 }
 .App-program-item {
-  margin-top: 0.1em;
+  margin-top: 0.2em;
 }
 @media all and (max-width: 600px) {
   .App-program-container {
