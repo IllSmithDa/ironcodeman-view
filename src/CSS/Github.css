@@ -11,10 +11,8 @@
   width: 10em;
 }
 .Github-table-container {
-  width: 80%;
-  margin-left: 10em;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  width: 95%;
+  margin: 2em;
   border: black solid 0.1em;
   background-color: aliceblue;
 }
