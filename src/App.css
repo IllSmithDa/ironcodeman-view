@@ -18,7 +18,7 @@ body {
   height: 1em;
   margin-top: 5em;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 600px) {
   .App-program-container {
     width: 100%;
     text-align: center;
