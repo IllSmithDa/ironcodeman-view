@@ -7,11 +7,11 @@ body {
   align-items: center;
 }
 .App-message-container {
-  margin-top: 5em;
-  text-align: center;
+  margin-top: 2em;
+  text-align: center
 }
 .App-program-container {
-  width: 100%;
+  width: 30em;
   text-align: center;
   height: 1em;
   margin-top: 5em;
