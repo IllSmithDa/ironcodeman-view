@@ -80,8 +80,8 @@ export default class Command extends Component {
                   (
                     <tr key={post.description}>
                       <th scope="row">{index + 1}</th>
-                      <th>{post.command}</th>
-                      <th>{post.description}</th>
+                      <th className="Github-command-item">{post.command}</th>
+                      <th className="Github-command-item">{post.description}</th>
                     </tr>
                   )
                 )}
@@ -105,8 +105,8 @@ export default class Command extends Component {
                   (
                     <tr key={post.description}>
                       <th scope="row">{index + 1}</th>
-                      <th>{post.command}</th>
-                      <th>{post.description}</th>
+                      <th className="Github-command-item">{post.command}</th>
+                      <th className="Github-command-item">{post.description}</th>
                     </tr>
                   )
                 )}
