@@ -35,7 +35,7 @@ class App extends Component {
           <div className="App-program-container">
             <Card>
               <Link to={post.url}>
-                <h1>{post.name}</h1>
+                <h1 className="App-program-item">{post.name}</h1>
               </Link>
             </Card>
           </div>
