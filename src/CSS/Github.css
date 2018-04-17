@@ -23,7 +23,8 @@
 @media all and (max-width: 767px) {
   .Github-table-container {
     margin: 0em;
-    margin-top: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     max-width: 100%;
     width: 100%;
     border: black solid 0.1em;
