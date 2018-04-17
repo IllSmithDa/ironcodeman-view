@@ -25,3 +25,6 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.navbar-header-item {
+  margin-left: 1em;
+}

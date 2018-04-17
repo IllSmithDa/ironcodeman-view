@@ -29,7 +29,7 @@ class App extends Component {
         <Navbar />
         <h1> Iron Code Man</h1>
         <div className="App-message-container">
-          <h2>Command Lines at your fingertips!</h2>
+          <h1><b>Command Lines at your fingertips!</b></h1>
         </div>
         {programList.map((post) => 
           (
