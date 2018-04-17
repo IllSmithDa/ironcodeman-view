@@ -27,7 +27,6 @@ class App extends Component {
     return (
       <div className="App-container">
         <Navbar />
-        <h1> Iron Code Man</h1>
         <div className="App-message-container">
           <h1><b>Command Lines at your fingertips!</b></h1>
         </div>

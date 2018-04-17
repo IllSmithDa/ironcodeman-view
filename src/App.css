@@ -5,9 +5,11 @@ body {
   display: flex;
   flex-direction: column; 
   align-items: center;
+  width: 100%;
+  margin-top: 2em;
 }
 .App-message-container {
-  margin-top: 2em;
+  margin-top: 4em;
   text-align: center
 }
 .App-program-container {
@@ -15,4 +17,12 @@ body {
   text-align: center;
   height: 1em;
   margin-top: 5em;
+}
+@media all and (max-width: 767px) {
+  .App-program-container {
+    width: 100%;
+    text-align: center;
+    height: 1em;
+    margin-top: 2em;
+  }
 }
