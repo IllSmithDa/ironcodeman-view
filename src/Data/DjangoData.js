@@ -119,7 +119,7 @@ const DjangoData = [
   },
   { 
     type: "Django Shell",
-    command: `cs1 = Class1(class1_text="What's new?", pub_date=timezone.now())`,
+    command: `cs1 = Class1( class1_text = "What's new?", pub_date=timezone.now())`,
     description: `Create a new instance of Class1. Support for time zones is enabled in 
     the default settings file, so Django expects a datetime with tzinfo for pub_date. 
     Use timezone.now() instead of datetime.datetime.now() and it will do the right thing.`
