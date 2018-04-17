@@ -8,10 +8,10 @@ body {
 }
 .App-message-container {
   margin-top: 5em;
-
+  text-align: center;
 }
 .App-program-container {
-  width: 30em;
+  width: 25%;
   text-align: center;
   height: 1em;
   margin-top: 5em;

@@ -90,7 +90,7 @@ export default class Command extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Command Lines for moving files and folders with Unix/Linux/Cygwin/MinGW</h3>
+              <h3>Command Lines for moving files and folders with Unix, Linux, Cygwin and MinGW</h3>
             </div>
             <Table>
               <thead>
