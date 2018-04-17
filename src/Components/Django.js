@@ -46,10 +46,10 @@ export default class Django extends Component {
           <div className="Github-table-container">
             <div className="Github-table-header">
               <h3>Django basic commands</h3>
-              <p>Please make sure to install the latest version of Python and use a virutalenvwrapper to set up a environment for 
+              <p><b>Please make sure to install the latest version of Python and use a virutalenvwrapper to set up a environment for 
                 Django before running these commands. You can use these documentations if you want to know how to set up a virtual 
                 enviroment for Django. <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">
-                https://virtualenvwrapper.readthedocs.io/en/latest/</a></p>
+                https://virtualenvwrapper.readthedocs.io/en/latest/</a></b></p>
             </div>
             <Table>
               <thead>
