@@ -20,7 +20,7 @@ body {
   border: solid black 2px;
 }
 .App-program-container:hover {
-  opacity: .75;
+  opacity: .8;
 }
 .App-program-item {
   width: 14em;
