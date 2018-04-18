@@ -37,4 +37,13 @@ body {
     margin-top: 2em;
     margin-bottom: 0em;
   }
+  .App-program-item {
+    width: 100%;
+    margin-top: 0.2em;
+    font-size: 2.5em;
+  }
+  .App-message-item {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+  }
 }

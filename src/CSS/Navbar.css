@@ -27,6 +27,14 @@
 }
 .navbar-header-item {
   margin-left: 0.5em;
-  font-size: 3em;
+  font-size: 3.3em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+@media all and (max-width: 800px) {
+  .navbar-header-item {
+    margin-left: 0.5em;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  
 }
