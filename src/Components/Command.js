@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Table } from 'reactstrap';
 import CommandData from '../Data/CommandData';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../CSS/Github.css';
 export default class Command extends Component {
@@ -36,7 +37,7 @@ export default class Command extends Component {
       <div>
         <Navbar />  
         <div className="Github-title-container">
-          <h1><b>Command Lines</b></h1>
+          <h1 className="Github-title-item"><b>Command Lines</b></h1>
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
@@ -113,6 +114,7 @@ export default class Command extends Component {
               </tbody>
             </Table>
           </div>
+          <Footer />
       </div>
     );
   }

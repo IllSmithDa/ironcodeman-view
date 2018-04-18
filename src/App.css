@@ -22,6 +22,10 @@ body {
 .App-program-item {
   margin-top: 0.2em;
 }
+.App-message-item {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2.5em;
+}
 @media all and (max-width: 600px) {
   .App-program-container {
     width: 100%;

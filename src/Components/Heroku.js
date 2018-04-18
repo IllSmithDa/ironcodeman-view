@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Table } from 'reactstrap';
 import HerokuData from '../Data/HerokuData';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../CSS/Github.css';
 export default class Github extends Component {
@@ -29,7 +30,7 @@ export default class Github extends Component {
       <div>
         <Navbar />
         <div className="Github-title-container">
-          <h1><b>Heroku</b></h1>
+          <h1 className="Github-title-item"><b>Heroku Commands</b></h1>
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
@@ -56,6 +57,7 @@ export default class Github extends Component {
               </tbody>
             </Table>
           </div>
+          <Footer />
       </div>
     );
   }
