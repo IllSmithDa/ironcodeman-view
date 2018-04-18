@@ -45,6 +45,32 @@ const HerokuData = [
     command: "heroku domains:add yourdomain.com",
     description: "Adds the custom domain 'yourdomain.com' to your Heroku app"
   },
+  { 
+    type: "Heroku Python",
+    command: `heroku run python manage.py migrate`,
+    description: `stores changes you have made in a migration. It needs to run for new projects and 
+    whenever the schema for database updates`
+  },
+  {
+    type: "Heroku Python",
+    command: "heroku run python manage.py createsuperuser",
+    description: `creates a super user for the heroku app`
+  },
+  { 
+    type: "Heroku Python",
+    command: "heroku run python manage.py shell",
+    description: "run the python shell" 
+  },
+  { 
+    type: "Heroku Python",
+    command: `heroku run python manage.py loaddata testapp/testdata.json`,
+    description: `loads the fixtures or the database dumps into database`
+  },
+  {
+    type: "Heroku Python",
+    command: `./manage.py dumpdata > testdata.json`,
+    description: `dumps the entire database into testdata.json`
+  },
 ];
 
 export default HerokuData;

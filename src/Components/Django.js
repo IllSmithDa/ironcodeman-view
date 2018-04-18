@@ -123,31 +123,6 @@ export default class Django extends Component {
               </tbody>
             </Table>
           </div>
-          <div className="Github-table-container">
-            <div className="Github-table-header">
-              <h3>Django + Heroku Commands</h3>
-            </div>
-            <Table>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th><b>Command</b></th>
-                  <th><b>Description</b></th>
-                </tr>
-              </thead>
-              <tbody>
-                {herokuArr.map((post, index) => 
-                  (
-                    <tr key={post.description}>
-                      <th scope="row">{index + 1}</th>
-                      <th className="Github-command-item">{post.command}</th>
-                      <th className="Github-command-item">{post.description}</th>
-                    </tr>
-                  )
-                )}
-              </tbody>
-            </Table>
-          </div>
           <Footer />
       </div>
     );

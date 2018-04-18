@@ -119,9 +119,8 @@ const DjangoData = [
   },
   { 
     type: "Django Shell",
-    command: `cs1 = Class1( text = "What's new?", date=timezone.now())`,
-    description: `Create a new instance of Class1. Support for time zones is enabled in 
-    the default settings file, so Django expects a datetime with tzinfo for 'date'`
+    command: `cs1 = Class1( text = "What's new?")`,
+    description: `Create a new instance of Class1 with a field called 'text' with value 'What's new?'`
   },
   {
     type: "Django Shell",
@@ -135,7 +134,7 @@ const DjangoData = [
   },
   { 
     type: "Django Shell",
-    command: `cs1.class1_text`,
+    command: `cs1.text`,
     description: `Access model field values via Python attributes. Will return "What's new?" in this case`
   },
   {
@@ -143,32 +142,6 @@ const DjangoData = [
     command: `cs1.question_text = "Nothing much"`,
     description: `Changes the value value of the attribute question_text of object cs1. You have to call
     cs1.save() after to actually save the changes you made to the value. `
-  },
-  { 
-    type: "Django Heroku",
-    command: `heroku run python manage.py migrate`,
-    description: `stores changes you have made in a migration. It needs to run for new projects and 
-    whenever the schema for database updates`
-  },
-  {
-    type: "Django Heroku",
-    command: "heroku run python manage.py createsuperuser",
-    description: `creates a super user for the heroku app`
-  },
-  { 
-    type: "Django Heroku",
-    command: "heroku run python manage.py shell",
-    description: "run the python shell" 
-  },
-  { 
-    type: "Django Heroku",
-    command: `heroku run python manage.py loaddata testapp/testdata.json`,
-    description: `loads the fixtures or the database dumps into database`
-  },
-  {
-    type: "Django Heroku",
-    command: `./manage.py dumpdata > testdata.json`,
-    description: `dumps the entire database into testdata.json`
   },
 ];
 
