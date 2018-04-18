@@ -3,7 +3,7 @@
   "name": "Create React App code",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://png.icons8.com/color/1600/iron-bars.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
