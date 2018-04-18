@@ -46,7 +46,7 @@ export default class Github extends Component {
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Git Basic Commands</h3>
+              <h3><b>Git Basic Commands</b></h3>
             </div>
             <Table>
               <thead>
@@ -71,7 +71,7 @@ export default class Github extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Git Remote Setup commands</h3>
+              <h3><b>Git Remote Setup commands</b></h3>
             </div>
             <Table>
               <thead>
@@ -96,7 +96,7 @@ export default class Github extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Syncing your local project with a Github Repository</h3>
+              <h3><b>Syncing your local project with a Github Repository</b></h3>
             </div>
             <Table>
               <thead>
@@ -121,7 +121,7 @@ export default class Github extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Git Delete Commands</h3>
+              <h3><b>Git Delete Commands</b></h3>
             </div>
             <Table>
               <thead>

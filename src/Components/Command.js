@@ -41,7 +41,7 @@ export default class Command extends Component {
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3> Basic Command Lines</h3>
+              <h3><b>Basic Command Lines</b></h3>
             </div>
             <Table>
               <thead>
@@ -66,7 +66,7 @@ export default class Command extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Command Lines for moving files and folders with Windows</h3>
+              <h3><b>Command Lines for moving files and folders with Windows</b></h3>
             </div>
             <Table>
               <thead>
@@ -91,7 +91,7 @@ export default class Command extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Command Lines for moving files and folders with Unix, Linux, Cygwin and MinGW</h3>
+              <h3><b>Command Lines for moving files and folders with Unix, Linux, Cygwin and MinGW</b></h3>
             </div>
             <Table>
               <thead>

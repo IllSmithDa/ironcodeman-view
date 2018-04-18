@@ -46,7 +46,7 @@ export default class Django extends Component {
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Django Basic Commands</h3>
+              <h3><b>Django Basic Commands</b></h3>
               <p><b>Please make sure to install the latest version of Python and use a virutalenvwrapper to set up a environment for 
                 Django before running these commands. You can use these documentations if you want to know how to set up a virtual 
                 enviroment for Django. <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">
@@ -75,7 +75,7 @@ export default class Django extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Django Database Commands</h3>
+              <h3><b>Django Database Commands</b></h3>
             </div>
             <Table>
               <thead>
@@ -100,7 +100,7 @@ export default class Django extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Django Shell Commands</h3>
+              <h3><b>Django Shell Commands</b></h3>
             </div>
             <Table>
               <thead>

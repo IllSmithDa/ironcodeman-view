@@ -37,7 +37,7 @@ export default class Github extends Component {
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Heroku Basic Commands</h3>
+              <h3><b>Heroku Basic Commands</b></h3>
             </div>
             <Table>
               <thead>
@@ -62,7 +62,7 @@ export default class Github extends Component {
           </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Heroku + Python</h3>
+              <h3><b>Heroku + Python</b></h3>
             </div>
             <Table>
               <thead>
