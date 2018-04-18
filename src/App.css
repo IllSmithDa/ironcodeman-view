@@ -10,28 +10,31 @@ body {
 }
 .App-message-container {
   margin-top: 4em;
-  text-align: center
+  text-align: center;
 }
 .App-program-container {
-  width: 30em;
   text-align: center;
-  height: 1em;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  height: 4.4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border: solid black 2px;
+}
+.App-program-container:hover {
+  opacity: .75;
 }
 .App-program-item {
+  width: 14em;
   margin-top: 0.2em;
 }
 .App-message-item {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 2.5em;
 }
 @media all and (max-width: 600px) {
   .App-program-container {
     width: 100%;
     text-align: center;
-    height: 1em;
-    margin-top: 3em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 0em;
   }
 }
