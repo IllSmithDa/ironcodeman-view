@@ -12,11 +12,11 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
   <Router>
   <div>
-    <Route exact path="/" component={App} />
-    <Route path="/git" component={Github} />
-    <Route path="/heroku" component={Heroku} />
-    <Route path="/django" component={Django} />
-    <Route path="/command" component={Command} />
+    <Route exact path="ironcodeman.herokuapp.com/" component={App} />
+    <Route path="ironcodeman.herokuapp.com/git" component={Github} />
+    <Route path="ironcodeman.herokuapp.com/heroku" component={Heroku} />
+    <Route path="ironcodeman.herokuapp.com/django" component={Django} />
+    <Route path="ironcodeman.herokuapp.com/command" component={Command} />
   </div>
 </Router>,
 document.getElementById('root'),
