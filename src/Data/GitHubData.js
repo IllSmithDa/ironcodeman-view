@@ -61,7 +61,8 @@ const GithubData = [
   {
     type: "Git Sync",
     command: "git remote add upstream git@github/username/repo.git",
-    description: "add the remote to the cloned repository"
+    description: `add the remote to the cloned repository if it doesn't 
+    already exist. Use 'git remote -v' to check if remote exists`
   },
   {
     type: "Git Sync",
