@@ -46,7 +46,7 @@ export default class Github extends Component {
         </div>
           <div className="Github-table-container">
             <div className="Github-table-header">
-              <h3>Git basic commands</h3>
+              <h3>Git Basic Commands</h3>
             </div>
             <Table>
               <thead>
