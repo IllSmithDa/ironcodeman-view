@@ -34,7 +34,7 @@ const GithubData = [
   {
     type: "Git Remote",
     command: "git init",
-    description: "init git to access git commands including git remote"
+    description: "init git to access git commands such as git remote"
   },
   {
     type: "Git Remote",

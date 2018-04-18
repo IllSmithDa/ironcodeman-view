@@ -12,7 +12,7 @@ const DjangoData = [
   {
     type: "Django Intro",
     command: "pip install django",
-    description: "now that you have set up and activated the environment, you can now easily install django into the environment context" 
+    description: "now that you have set up and activated the environment, you can now easily install Django into the environment context" 
   },
   {
     type: "Django Intro",
@@ -34,7 +34,7 @@ const DjangoData = [
   { 
     type: "Django Intro",
     command: "/manage.py runserver",
-    description: `starts up the python/django based server. Make sure that the 
+    description: `starts up the Django server. Make sure that the 
     manage.py file can be found when typing 'ls' or 'dir' in the terminal before 
     you start up server. Usually located in the main app folder itself`
   },
@@ -61,7 +61,7 @@ const DjangoData = [
   { 
     type: "Django Intro",
     command: ".python manage.py createsuperuser",
-    description: `creates a user who can login into the admin site of the django app. Will ask 
+    description: `creates a user who can login into the admin site of the Django app. Will ask 
     you to enter a email and password.` 
   },
   { 
@@ -115,7 +115,7 @@ const DjangoData = [
   { 
     type: "Django Shell",
     command: ".from django.utils import timezone",
-    description: "imports the provided timezone from django itself" 
+    description: "imports the provided timezone from Django" 
   },
   { 
     type: "Django Shell",
