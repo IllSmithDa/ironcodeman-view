@@ -2,17 +2,17 @@ const HerokuData = [
   { 
     type: "Heroku Intro",
     command: "heroku login",
-    description: "login to heroku account. Prepare to give username and password" 
+    description: "login to Heroku account. Prepare to give username and password" 
   },
   {
     type: "Heroku Intro",
     command: "heroku create appname",
-    description: "creates a heroku app called appname"
+    description: "creates a Heroku app called appname"
   },
   {
     type: "Heroku Intro",
     command: "heroku create appname --buildpack https://github.com/mars/create-react-app-buildpack.git",
-    description: "use this command instead of heroku create appname to create heroku app called appname if you are using react."
+    description: "use this command instead of Heroku create appname to create heroku app called appname if you are using react."
   },
   {
     type: "Heroku Intro",
@@ -22,7 +22,7 @@ const HerokuData = [
   { 
     type: "Heroku Intro",
     command: "git push heroku master",
-    description: "pushes the newly added heroku app to be deployed through heroku" 
+    description: "pushes the newly added Heroku app to be deployed through Heroku" 
   },
   { 
     type: "Heroku Intro",
@@ -43,7 +43,7 @@ const HerokuData = [
   {
     type: "Heroku Intro",
     command: "heroku domains:add yourdomain.com",
-    description: "Adds the custom domain 'yourdomain.com' to your heroku app"
+    description: "Adds the custom domain 'yourdomain.com' to your Heroku app"
   },
 ];
 
