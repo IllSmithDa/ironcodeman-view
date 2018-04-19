@@ -2,17 +2,17 @@ const CommandData = [
   { 
     type: "Command Intro",
     command: "ls",
-    description: "lists the content of directory. Will not work in windows command line" 
+    description: "lists the contents of the current directory. Will not work in windows command line" 
   },
   { 
     type: "Command Intro",
     command: "ls -la",
-    description: "lists the content of directory including hidden files. Will not in windows command line" 
+    description: "lists the content of the current directory including hidden files. Will not work in windows command line" 
   },
   {
     type: "Command Intro",
     command: "dir",
-    description: `list content of directory and works in windows command line. Does not work in Unix command line`
+    description: `lists the contents of the current directory and works in windows command line. Does not work in Unix command line`
   },
   { 
     type: "Command Intro",
@@ -53,7 +53,7 @@ const CommandData = [
   {
     type: "Command File Linux",
     command: "cp filename folderName",
-    description: "copies the file 'fileName' into directory 'folderName' and overwriting existing files with same name"
+    description: "copies the file 'fileName' into directory 'folderName' and overwriting existing files with the same name"
   },
   {
     type: "Command File Linux",
@@ -73,7 +73,7 @@ const CommandData = [
   {
     type: "Command File Windows",
     command: "del /f filename",
-    description: "Force delete file 'called fileName'"
+    description: "Force delete file called 'fileName'"
   }, 
   {
     type: "Command File Windows",

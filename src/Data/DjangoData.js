@@ -51,7 +51,7 @@ const DjangoData = [
   {
     type: "Django Intro",
     command: "./manage.py shell",
-    description: "starts up the python shell and test Django api."
+    description: "starts up the python shell for testing Django api."
   },
   { 
     type: "Django Intro",
