@@ -17,8 +17,6 @@ body {
   height: 4.385em;
   margin-top: 2em;
   margin-bottom: 1em;
-  border: solid black 2px;
-  border-radius: 6.5px;
 }
 .App-program-container:hover {
   opacity: .8;
