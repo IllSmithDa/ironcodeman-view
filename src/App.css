@@ -14,10 +14,11 @@ body {
 }
 .App-program-container {
   text-align: center;
-  height: 4.4em;
+  height: 4.37em;
   margin-top: 2em;
   margin-bottom: 1em;
   border: solid black 2px;
+  border-radius: 6.5px;
 }
 .App-program-container:hover {
   opacity: .8;
@@ -36,7 +37,7 @@ body {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0em;
-    height: 3em;
+    height: 2.96em;
   }
   .App-program-item {
     width: 100%;
@@ -48,7 +49,6 @@ body {
     text-align: center;
   }
   .App-message-item {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }
