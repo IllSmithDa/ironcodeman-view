@@ -254,7 +254,7 @@ const JavascriptData = [
   },
   {
     concept: 'Private properties, using closures',
-    type: 'functions',
+    type: 'objects',
     definition: `JavaScript lets you define private properties by using 
     the underscore prefix as shown in the above example. However, this 
     does not prevent a user from directly accessing or modifying a property 
