@@ -8,6 +8,13 @@
 .Github-title-item {
   font-family: 'Times New Roman', Times, serif;
 }
+.Github-example-item {
+  font-weight: bolder;
+  color: black;
+  width: 30em;
+  height: 20em;
+}
+
 .Github-table-header {
   margin-bottom: 2em;
   margin-left: 1em;
@@ -25,7 +32,14 @@
   border: black solid 0.1em;
   background-color: aliceblue;
 }
-
+@media all and (max-width: 1000px) {
+  .Github-example-item {
+    font-weight: bolder;
+    color: black;
+    width: 20em;
+    height: 20em;
+  }
+}
 @media all and (max-width: 800px) {
   .Github-table-container {
     margin: 0em;
@@ -39,5 +53,44 @@
   .Github-command-item {
     font-size: 10px;
   }
-  
+  .Github-example-item {
+    font-weight: bolder;
+    color: black;
+    width: 20em;
+    height: 20em;
+  }
+}
+
+@media all and (max-width: 650px) { 
+  .Github-example-item {
+    width: 15em;
+    height: 15em;
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 450px) { 
+  .Github-example-item {
+    font-weight: bolder;
+    color: black;
+    width: 10em;
+    height: 15em;
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 350px) { 
+  .Github-example-item {
+    font-weight: bolder;
+    color: black;
+    width: 9em;
+    height: 15em;
+    font-size: 7px;
+  }
+  .Github-command-item {
+    font-size: 7px;
+  }
+  .Github-section-header {
+    font-size: 8px;
+  }
 }

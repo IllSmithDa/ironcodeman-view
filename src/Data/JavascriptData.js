@@ -28,19 +28,20 @@ const JavascriptData = [
     definition: `Thee value of 'this' in the function scope is determined by
     how a function is called. To pass a value to this, simply use call or apply`,
     example: `
-    // An object can be passed as the first argument to call or apply and this will be bound to it.
+    // object passed as the first argument
     var obj = {a: 'Custom'};
-    
-    // This property is set on the global object
     var a = 'Global';
     
-    function whatsThis() {
-      return this.a;  // The value of this is dependent on how the function is called
+    function myFunction() {
+      return this.a;  
     }
-    
-    whatsThis();          // 'Global'
-    whatsThis.call(obj);  // 'returns custom as the value of this is obj thanks to call() and apply()'
-    whatsThis.apply(obj); // 'Custom'
+
+    // this will find outer global scope var a
+    myFunction();          // returns 'Global'
+
+    // bind 'this' to object using call or apply
+    myFunction.call(obj);    // returns 'Custom'
+    myFunction.apply(obj);    // returns 'Custom'
     `
   },
   {
@@ -93,8 +94,10 @@ const JavascriptData = [
       const a = 'hello'; // local scope
     }
     function funcB() {
-      console.log(b) // prints 'world'
-      console.log(a)  // cannot access a from funcA() so will return error
+      // prints 'world'
+      console.log(b);
+      // cannot access a from funcA() so will return error
+      console.log(a);
     }
     `
   },
@@ -106,12 +109,13 @@ const JavascriptData = [
     which the search will stop`,
     example: `
     function foo(a) {
-      console.log( a + b ); // finds b on the outer scope which is global scope
+      // finds b on the outer scope which is global scope
+      console.log( a + b );
     }
     
-    var b = 2;
+    var b = 3;
     
-    foo( 2 ); // 4
+    foo( 2 ); // prints 5
     `
   },
   {
@@ -124,8 +128,10 @@ const JavascriptData = [
 
       const a = "hello"; 
 
-      function funcA() { // funcA is the inner function, a closure
-        console.log(a); //  uses variable declared in the parent function    
+      // funcA is the inner function, a closure
+      function funcA() {
+        // uses variable declared in the parent function  
+        console.log(a);  
       }
       funcA();    
     }
@@ -145,7 +151,8 @@ const JavascriptData = [
         var a = 2;
       
         function bar() {
-          console.log( a ); // bar() has access to variable a in the outer scope
+          // bar() has access to variable a in the outer scope
+          console.log( a );
         }
       
         bar(); 
@@ -163,10 +170,11 @@ const JavascriptData = [
       
         return bar;
       }
+      // calls foo then return the bar function;
+      var baz = foo();
       
-      var baz = foo(); // will call foo then return the bar function;
-      
-      baz(); // will call bar() and bar will still have same scope and access to var a;
+      // calls bar() and has original scope and access to var a;
+      baz();
       
       `
   },
@@ -212,7 +220,8 @@ const JavascriptData = [
     example:`
     function myfunction() {
       myVar = x + 1;
-      const x = 4;  // x declared after it has been used
+      // x declared after it has been used
+      const x = 4;
       console.log(myVar) // prints 5
     }`
   },
@@ -284,10 +293,17 @@ const JavascriptData = [
              return [word , ", " , user].join("");
       };
     };
-    let HelloUser = myFirstCurry("Hello"); // set one function invoke with subset of arguments to a var
-    console.log('hello world') // performing some random code 
-    HelloUser("Rahul"); // Output: "Hello, Rahul"  uses the previously established variable above to set rest of arugments
-    myFirstCurry("Hey, wassup!")("Rahul"); // Output: "Hey, wassup!, Rahul"
+    // first subset of arguments
+    let HelloUser = myFirstCurry("Hello");
+
+    // performing some random code 
+    console.log('hello world')
+    
+    // second subset of arugments
+    HelloUser("Rahul"); // return "Hello, Rahul" 
+    
+    // alternative currying
+    myFirstCurry("Hey, wassup!")("Rahul");
     `
   },
   {
@@ -327,27 +343,29 @@ const JavascriptData = [
      the number of arguments passed. However, Javscript does 
      not natively support method overloading and it will simply 
      use the last defined method rather than matching the number 
-     of arguments like in Java. THe closest thing in Javscript is 
+     of arguments like in Java. The closest thing in Javscript is 
      to have a parent function that accepts any amount of arugments
      and call appropriate child methods based on the number of arguments.
      Can use if and else if or use switch statements. `,
     example: `
     function funcA() {
-      if (arguments.length==1) {
-        return funcA(arguments[0]); 
-      
-      } else if (arguments.length==2){
-        return funcB(arguments[0],  arguments[1]);
-      
-      }}
-      
-      function funcA(a,b) {    // also example of function hoisting
-      return a + b;
+      // arguments.length counts number of arguments
+      if (arguments.length===1) {
+        return funcB(arguments[0]); 
+      } else if (arguments.length===2){
+        return funcC(arguments[0],  arguments[1]);
       }
-      
-      function funcB(c) {
-      return c;
-      }
+    }
+
+    function funcB(a) { 
+      return a;
+    }
+
+    function funcC(b, c) {
+      return b + c;
+    }
+
+    funcA(2, 3) // returns 5 
     `
   },
   {
@@ -372,7 +390,12 @@ const JavascriptData = [
     type: 'variables',
     definition: `variable which data is stored directly into variable, is not a object, has no methods and has with 6 
     types: string, number, bool, undefined, null, symbol,`,
-    example: `x = 6`
+    example: `
+    var stringVar = 'Hello';
+    var numVar = 23;
+    var boolVar = true;
+    var nullVar - null;
+    `
   },
   {
     concept: `reference data type`,
@@ -383,7 +406,8 @@ const JavascriptData = [
     x = 6;
     y = x;
     x = 5;
-    console.log(y) // 6`
+    console.log(x); // prints 5
+    console.log(y); // prints 6`
   },
   {
     concept: `Asynchronous programming`,
@@ -405,7 +429,7 @@ const JavascriptData = [
       finally {
         console.log( "Hello" );
       }
-      console.log( "will not be reached because return statement but finally still runs" );
+      console.log( "will not be reached but finally still runs" );
     }
     
     `
