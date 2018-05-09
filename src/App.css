@@ -7,6 +7,7 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 2em;
+  margin-bottom: 20%;
 }
 .App-message-container {
   margin-top: 5em;
@@ -29,6 +30,28 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 2.5em;
 }
+@media all and (max-width: 600px) {
+  .App-program-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    height: 2.96em;
+  }
+  .App-program-item {
+    width: 100%;
+    font-size: 1.5em;
+
+  }
+  .App-message-container {
+    margin-top: 4em;
+    text-align: center;
+  }
+  .App-message-item {
+    font-size: 1.5em;
+  }
+}
+
 @media all and (max-width: 600px) {
   .App-program-container {
     width: 100%;
