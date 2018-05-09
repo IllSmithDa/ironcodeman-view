@@ -16,7 +16,7 @@ const ProgramList = [
     url: "/django"
   },
   {
-    name: "Javascript Concepts",
+    name: "Javascript Concepts(new)",
     url: "/javascript"
   }
 ];

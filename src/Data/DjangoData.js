@@ -60,7 +60,7 @@ const DjangoData = [
   },
   { 
     type: "Django Intro",
-    command: ".python manage.py createsuperuser",
+    command: "python manage.py createsuperuser",
     description: `creates a user who can login into the admin site of the Django app. Will ask 
     you to enter a email and password.` 
   },
