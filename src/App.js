@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Card, CardHeader, CardText, CardBody } from 'reactstrap';
+import { Card } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import ProgramList from './Data/ProgramList';
-import GitHub from './Components/Gitbhub';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -29,7 +27,7 @@ class App extends Component {
       <div className="App-container">
         <Navbar />
         <div className="App-message-container">
-          <h1 className="App-message-item"><b>Command Lines at your fingertips!</b></h1>
+          <h1 className="App-message-item"><b>Command Lines and Concepts at your fingertips!</b></h1>
         </div>
         {programList.map((post) => 
           (

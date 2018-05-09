@@ -14,6 +14,10 @@ const ProgramList = [
   {
     name: "Django Commands",
     url: "/django"
+  },
+  {
+    name: "Javascript Concepts",
+    url: "/javascript"
   }
 ];
 
