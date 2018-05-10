@@ -8,6 +8,7 @@ import Heroku from './Components/Heroku';
 import Django from './Components/Django';
 import Command from './Components/Command';
 import Javascript from './Components/Javascript';
+import CProgram from './Components/CProgram';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Route path="/django" component={Django} />
     <Route path="/command" component={Command} />
     <Route path="/javascript" component={Javascript} />
+    <Route path="/cprogramming" component={CProgram} />
   </div>
 </Router>,
 document.getElementById('root'),

@@ -56,8 +56,7 @@ export default class Javascript extends Component {
           <div className="Github-table-container">
             <div className="Github-table-header">
               <h3><b>Javascript Variable Concepts</b></h3>
-              <p><b>This page is currently in progress and will be updated in the near future including
-                a section for Es6.</b></p>
+              <p><b>This page is currently in progress and will be updated.</b></p>
             </div>
             <Table>
               <thead>

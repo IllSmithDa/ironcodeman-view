@@ -18,6 +18,10 @@ const ProgramList = [
   {
     name: "Javascript Concepts(new)",
     url: "/javascript"
+  },
+  {
+    name: "C Concepts(new)",
+    url: "/cprogramming"
   }
 ];
 
