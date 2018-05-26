@@ -221,7 +221,7 @@ const JavascriptData = [
     function myfunction() {
       myVar = x + 1;
       // x declared after it has been used
-      const x = 4;
+      var x = 4;
       console.log(myVar) // prints 5
     }`
   },
