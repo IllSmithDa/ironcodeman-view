@@ -25,7 +25,7 @@ const JavascriptData = [
   {
     concept: `'this' in function scope`,
     type: 'this',
-    definition: `Thee value of 'this' in the function scope is determined by
+    definition: `The value of 'this' in the function scope is determined by
     how a function is called. To pass a value to this, simply use call or apply`,
     example: `
     // object passed as the first argument
@@ -85,7 +85,7 @@ const JavascriptData = [
     concept: `scope`,
     type: 'scope',
     definition: `Determines the visibility of variables by maintaining a look up list of all itentified variables while enforcing 
-    rules to how they are accessible to currently executing code. Variables declared outside of a function is global and can be 
+    rules on how they are accessible to currently executing code. Variables declared outside of a function is global and can be 
     accessed by all functions. Local scope are variables declared inside a function and can only be accessed within the function. Other
     functions outside the function cannot access the variable. `,
     example:`
@@ -400,7 +400,7 @@ const JavascriptData = [
   {
     concept: `reference data type`,
     type: 'variables',
-    definition: `variable which stores another varaible name or but only its current value of the stored varable. If stored variable value 
+    definition: `It is a variable which stores another variable name but only its current value of the stored variable. If stored variable value 
     changes the reference data will stay the same.`,
     example: `
     x = 6;
@@ -420,7 +420,7 @@ const JavascriptData = [
     concept: `try and finally`,
     type: 'functions',
     definition: `'finally' can be used alongside with try and catch or just with try. Code in 'finally' will run no matter what and right after 
-    the try or optional catch blocks of code`,
+    the try`,
     example: `
     function foo() {
       try {
