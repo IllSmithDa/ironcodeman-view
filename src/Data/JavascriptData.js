@@ -228,14 +228,14 @@ const JavascriptData = [
   {
     concept: 'module pattern',
     type: 'functions',
-    definition: ` It is basically captures the essence of having a 'class' 
+    definition: ` It functions very much like a class
     from other programming languages by having private and public methods, 
-    variables in single objects, and sheilding from global scope when possible.`,
+    variables in single objects and blocking global access when possible.`,
     example:`
 
-    const module1 = (function () {
+    var module1 = (function () {
  
-      const counter = 0;
+      var counter = 0;
      
       return {
      
@@ -254,20 +254,19 @@ const JavascriptData = [
     // Usage:
      
     // Increment our counter
-    testModule.incrementCounter();
+    module1.incrementCounter();
      
     // Check the counter value and reset
     // Outputs: counter value prior to reset: 1
-    testModule.resetCounter();
+    module1.resetCounter();
     `
   },
   {
     concept: 'Private properties, using closures',
     type: 'objects',
     definition: `JavaScript lets you define private properties by using 
-    the underscore prefix as shown in the above example. However, this 
-    does not prevent a user from directly accessing or modifying a property 
-    that is supposed to be private.`,
+    the underscore prefix. However, the user will still be able to 
+    directly access or modify private properties`,
     example:`
     function Rectangle(_length, _breadth) {
 
