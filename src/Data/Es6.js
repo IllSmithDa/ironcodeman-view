@@ -10,7 +10,7 @@ const Es6 = [
     `
   },
   {
-    concept: 'blocked  scoped functions and scope',
+    concept: 'blocked scoped functions and scope',
     definition: `Functions declarations that occur inside the blocks are now specfied to be scoped 
     to that block, making it inaccessible to global invocation. Blocks are simply the {} that organize
     sets of code that are related to each other`,
@@ -35,7 +35,7 @@ const Es6 = [
     example: `
     {
       console.log( a );	// undefined
-      console.log( b );	// ReferenceError!
+      console.log( b );	// ReferenceError
     
       var a;
       let b;
@@ -52,7 +52,7 @@ const Es6 = [
     Example 1
     {
       const a = 2;
-      console.log( a );	// 2
+      console.log( a );	// prints 2
     
       a = 3; // TypeError!
     }
@@ -60,7 +60,7 @@ const Es6 = [
     {
       const a = [1,2,3];
       a.push( 4 );
-      console.log( a );		// [1,2,3,4]
+      console.log( a );		// prints [1,2,3,4]
       
       a++;  // TypeError!
       a = 42;		// TypeError!
@@ -82,7 +82,7 @@ const Es6 = [
       console.log( x, y, z );
     }
     
-    foo( ...[1,2,3] );				// 1 2 3
+    foo( ...[1,2,3] ); // prints 1 2 3
     `
   },
   {
@@ -94,7 +94,7 @@ const Es6 = [
     var a = [2,3,4];
     var b = [ 1, ...a, 5 ];
 
-    console.log( b );	 // [1,2,3,4,5]
+    console.log( b );	 // prints [1,2,3,4,5]
     ` 
   },
   {
@@ -106,7 +106,7 @@ const Es6 = [
       console.log( args );
     }
     
-    foo( 1, 2, 3, 4, 5); // [1,2,3,4,5]
+    foo( 1, 2, 3, 4, 5); // prints [1,2,3,4,5]
     `
   },
   {
@@ -207,14 +207,12 @@ const Es6 = [
     
     class Square extends Rectangle {
       constructor(length) {
-        this.height; // ReferenceError, super needs to be called first!
+        this.height; // ReferenceError, super needs to be called first
         
-        // Here, it calls the parent class' constructor with lengths
-        // provided for the Rectangle's width and height
+        /* Calls the parent class' constructor with lengths
+        provided for the Rectangle's width and height */
         super(length, length);
-        
-        // Note: In derived classes, super() must be called before you
-        // can use 'this'. Leaving this out will cause a reference error.
+
         this.name = 'Square';
       }
     }
@@ -231,10 +229,8 @@ const Es6 = [
       return x + y;
     }
     
-    Example 2
-    
-    // shorthand version of example 1
-    const function1 = (x, y) =>  x + y;  
+    // shorthand version
+    const function1 = (x, y) =>  x + y;
 
     function1(1, 3)  // return 4 in both cases
     `
