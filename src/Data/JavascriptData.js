@@ -70,7 +70,7 @@ const JavascriptData = [
     }
 
     var o = new C();
-    console.log(o.a); // 37
+    console.log(o.a); // prints 37
 
     function C2() {
       this.a = 37;
@@ -78,7 +78,7 @@ const JavascriptData = [
     }
     
     o = new C2();
-    console.log(o.a); // 38
+    console.log(o.a); // prints 38
     `
   },
   {
@@ -257,7 +257,6 @@ const JavascriptData = [
     module1.incrementCounter();
      
     // Check the counter value and reset
-    // Outputs: counter value prior to reset: 1
     module1.resetCounter();
     `
   },
