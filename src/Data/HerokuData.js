@@ -31,6 +31,17 @@ const HerokuData = [
   },
   { 
     type: "Heroku Intro",
+    command: "heroku restart",
+    description: "Restarts the server. You can indicate specific app to restart using: heroku restart -a app_name" 
+  },
+  { 
+    type: "Heroku Intro",
+    command: "heroku logs -t",
+    description: `Allows you to consistently recieve logs in real time allowing you to monitor requests and server 
+    crashes in real time.`
+  },
+  { 
+    type: "Heroku Intro",
     command: "heroku ps:scale web=0 --app appname",
     description: `sets heroku app appname to 0 running dynos which ultimately means 0 servers to
     stop public access to the app without removing app` 
