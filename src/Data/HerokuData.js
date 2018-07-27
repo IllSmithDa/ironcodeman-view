@@ -11,6 +11,17 @@ const HerokuData = [
   },
   {
     type: "Heroku Intro",
+    command: "heroku apps",
+    description: "Lists all heroku app made under the current user"
+  },
+  {
+    type: "Heroku Intro",
+    command: "heroku apps:info",
+    description: `provides information for a particular heroku app including
+    git url, repo size, Dynos and web URL.`
+  },
+  {
+    type: "Heroku Intro",
     command: "heroku create appname --buildpack https://github.com/mars/create-react-app-buildpack.git",
     description: "use this command instead of Heroku create appname to create heroku app called appname if you are using React.js"
   },
@@ -18,6 +29,12 @@ const HerokuData = [
     type: "Heroku Intro",
     command: "heroku git:remote -a appname2",
     description: "can switch to other existing apps which in this case is appname2 " 
+  },
+  {
+    type: "Heroku Intro",
+    command: "git remote add heroku git@heroku.com:project.git",
+    description: `adds a heroku remote as a remote in the current local repository. The 'project.git' in this example 
+    should be replaced with heroku url e.g myapp.herokuapp.com`
   },
   { 
     type: "Heroku Intro",

@@ -74,6 +74,24 @@ const GithubData = [
     command: "git pull upstream master",
     description: "pulls and syncs your local project with the master branch"
   },
+  { 
+    type: "Git Intro",
+    command: "git pull origin master --allow-unrelated-histories",
+    description: `pulls and syncs your local project with the master branch and also 
+    allowing you to merge even if the local and the git repo do not share git commit 
+    history` 
+  },
+  {
+    type: "Git Branch",
+    command: "git checkout -b your_branch_name",
+    description: `creates a new branch called newBranch and adding '-b' will switch you to 
+    the new branch 'your_branch_name'.`
+  },
+  {
+    type: "Git Branch",
+    command: "git checkout your_branch_name",
+    description: `Switches to the existing branch 'your_branch_name'.`
+  },
   {
     type: "Git Remove",
     command: "git reset HEAD FileName",
