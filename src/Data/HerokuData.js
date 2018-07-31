@@ -49,7 +49,7 @@ const HerokuData = [
     type: "Heroku Intro",
     command: "heroku apps:destroy",
     decsription: "Deletes the current app"
-  }
+  },
   {
     type: "Heroku Intro",
     command: "git remote add heroku git@heroku.com:project.git",
