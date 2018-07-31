@@ -32,6 +32,26 @@ const HerokuData = [
   },
   {
     type: "Heroku Intro",
+    command: "heroku apps:rename 'newname'",
+    description: "Switches the current heroku appanme to 'newname'" 
+  },
+  {
+    type: "Heroku Intro",
+    command: "heroku apps:rename 'newname'",
+    description: "Switches the current heroku appanme to 'newname'" 
+  },
+  {
+    type: "Heroku Intro",
+    command:"heroku apps:rename newname --app oldname",
+    description: "switches the specific app name 'oldname' to 'newname'"
+  },
+  {
+    type: "Heroku Intro",
+    command: "heroku apps:destroy",
+    decsription: "Deletes the current app"
+  }
+  {
+    type: "Heroku Intro",
     command: "git remote add heroku git@heroku.com:project.git",
     description: `adds a heroku remote as a remote in the current local repository. The 'project.git' in this example 
     should be replaced with heroku url e.g myapp.herokuapp.com`

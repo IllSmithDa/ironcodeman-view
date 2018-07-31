@@ -14,7 +14,8 @@ const GithubData = [
   { 
     type: "Git Intro",
     command: "git checkout -b 'branchname'",
-    description: "creates a new branch called branchman and switch to the new branch" 
+    description: `creates a new branch called 'branchname' and adding -b to the 
+    command will switch to the new branch`
   },
   { 
     type: "Git Intro",
