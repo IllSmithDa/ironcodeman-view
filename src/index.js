@@ -9,7 +9,7 @@ import Django from './Components/Django';
 import Command from './Components/Command';
 import Javascript from './Components/Javascript';
 import CProgram from './Components/CProgram';
-import registerServiceWorker from './registerServiceWorker';
+
 
 ReactDOM.render(
   <Router>
@@ -25,4 +25,4 @@ ReactDOM.render(
 </Router>,
 document.getElementById('root'),
 );
-registerServiceWorker();
+
