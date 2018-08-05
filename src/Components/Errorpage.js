@@ -8,7 +8,7 @@ export default function HomePage() {
     <div>
       <Navbar />
       <div>
-        <br /><br /><br /><h1 className="navbar-header-item"> 404: Page does not Exist</h1>
+        <br /><br /><br /><br /><h1 className="navbar-header-item"> 404: Page does not Exist</h1>
       </div>
       <Footer />
     </div>
