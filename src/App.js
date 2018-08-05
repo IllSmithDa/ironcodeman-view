@@ -13,7 +13,7 @@ import './App.css';
 export default class App extends Component {
   render() {
     return (
-      <div className="App-container">
+      <div>
         <Router>
           <Switch>
             <Route exact path="/" component={Homepage} />
