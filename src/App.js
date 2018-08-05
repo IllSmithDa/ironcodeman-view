@@ -1,49 +1,33 @@
 import React, { Component } from 'react';
-import { Card } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import ProgramList from './Data/ProgramList';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Homepage from './Components/Homepage'
+import Github from './Components/Gitbhub';
+import Heroku from './Components/Heroku';
+import Django from './Components/Django';
+import Command from './Components/Command';
+import Javascript from './Components/Javascript';
+import CProgram from './Components/CProgram';
+import Errorpage from './Components/Errorpage';
 import './App.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      programList: [],
-      arrayInit: false
-    }
-  }
-  componentDidMount() {
-    const programArr = [];
-    for (let i = 0; i < ProgramList.length; i += 1) {
-      this.state.programList.push(ProgramList[i]);
-    } 
-    this.setState({ arrayInit: true });
-  }
+export default class App extends Component {
   render() {
-    const programList = this.state.programList;
     return (
       <div className="App-container">
-        <Navbar />
-        <div className="App-message-container">
-          <h1 className="App-message-item"><b>Command Lines and Concepts at your fingertips!</b></h1>
-        </div>
-        {programList.map((post) => 
-          (
-          <div className="App-program-container">
-            <Card>
-              <Link to={post.url}>
-                <h1 className="App-program-item">{post.name}</h1>
-              </Link>
-            </Card>
-          </div>
-          )
-        )}
-        <Footer />
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/git" component={Github} />
+            <Route path="/heroku" component={Heroku} />
+            <Route path="/django" component={Django} />
+            <Route path="/command" component={Command} />
+            <Route path="/javascript" component={Javascript} />
+            <Route path="/cprogramming" component={CProgram} />
+            <Route component={Errorpage} />
+          </Switch>
+        </Router>,
       </div>
     );
   }
 }
 
-export default App;
