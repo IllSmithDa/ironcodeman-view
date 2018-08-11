@@ -93,7 +93,7 @@ const CData = [
   },
   {
     concept: `void pointer`,
-    definition: `A specific type of pointer that points to somde data location in the storage which doesn't have a specific type. It is 
+    definition: `A specific type of pointer that points to some data location in the storage which doesn't have a specific type. It is 
     a special type of pointer that can be pointed at any data type`,
     example: 
     `

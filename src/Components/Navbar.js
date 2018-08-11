@@ -8,7 +8,7 @@ export default class NavBar extends Component {
     return (
       <div className="navbarA navbar-inverseA navbar-fixed-topA">
           <div className="container-fluidA">
-            <div className="navbar-headerA">
+            <div className="navbar-headerA">  
               <Link to="/">
                 <h1 className="navbar-header-item">Iron Code Man</h1>
               </Link>
