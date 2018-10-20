@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import axios from 'axios';
 import Homepage from './Components/Homepage'
 import Github from './Components/Gitbhub';
 import Heroku from './Components/Heroku';
@@ -11,6 +12,11 @@ import Errorpage from './Components/Errorpage';
 import './App.css';
 
 export default class App extends Component {
+  componentDidMount() {
+    setInterval(function() {
+      axios.get("https://ironcodeman.herokuapp.com");
+    }, 300000);
+  }
   render() {
     return (
       <div>
