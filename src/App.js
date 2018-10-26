@@ -15,7 +15,7 @@ export default class App extends Component {
   componentDidMount() {
     setInterval(function() {
       axios.get("https://ironcodeman.herokuapp.com");
-    }, 300000);
+    }, 900000);
   }
   render() {
     return (
