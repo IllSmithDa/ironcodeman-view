@@ -16,10 +16,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy" : "npm run build && gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "homepage": "https://IllSmithDa.github.io/ironcodeman-view"
+    "gh-pages": "^2.0.1",
+    "surge": "^0.20.1"
+  }
 }
