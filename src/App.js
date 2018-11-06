@@ -14,7 +14,7 @@ import './App.css';
 export default class App extends Component {
   componentDidMount() {
     setInterval(function() {
-      axios.get("https://ironcodeman.herokuapp.com");
+      axios.get("http://www.ironcodeman.com");
     }, 900000);
   }
   render() {
