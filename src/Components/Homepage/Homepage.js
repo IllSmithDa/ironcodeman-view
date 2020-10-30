@@ -25,13 +25,11 @@ export default class Homepage extends Component {
   render() {
     const programList = this.state.programList;
     return (
-      <div>
+      <div className="app-container">
         <Navbar />
-        <div className="app-container">
-          <div>
-            <div className="app-banner">
-              <span><b>Quick CLI and Concepts</b></span>
-            </div>
+        <div className="homepage-container">
+          <div className="app-banner">
+            <span><b>Quick CLI and Concepts</b></span>
           </div>
           <div className="card-container">
               {programList.map((post) => 
