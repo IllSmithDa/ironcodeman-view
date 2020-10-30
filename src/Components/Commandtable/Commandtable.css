@@ -1,0 +1,52 @@
+.command-container {
+    background-color: #1F2833;
+    margin-top: 50px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.comtable-container {
+  width: 1023px;
+  margin: auto;
+  background-color: #0B0C10;
+  border-radius: 5px;
+}
+.comtable-item {
+  padding: 1rem;
+}
+.comtable-header {
+  padding: 12px;
+}
+.comtable-header h3 {
+  font-size: 2rem;
+  color: #66FCF1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.comtable-title {
+  padding-top: 1rem;
+}
+.comtable-title tr th{
+  width: 50%;
+  font-size: 1.3rem;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.comtable-content tr th{
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width: 1023px) {
+  .comtable-container {
+      width: 98%;
+      margin: auto;
+  }
+  .comtable-header h3 {
+      font-size: 1.5rem;
+  }
+  .comtable-title tr th {
+      font-size: 1rem;
+  }
+  .comtable-content tr th{ 
+      font-size: .9rem;
+  }
+}

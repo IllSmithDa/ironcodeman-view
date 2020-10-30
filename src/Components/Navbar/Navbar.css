@@ -1,0 +1,36 @@
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height: 50px;
+  background-color: #0B0C10;
+}
+
+.navbar-fixed div {
+  width: 1023px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar-fixed div span {
+
+  font-size: 1.75em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navbar-fixed div span a, .navbar-fixed div span a:hover{
+  color: #66FCF1;
+
+}
+
+@media(max-width: 1023px) {
+  .navbar-fixed div {
+    width: 95%;
+    margin: auto;
+  }
+  
+}
