@@ -1,5 +1,11 @@
+/*
+    #0B0C10
+    #1F2833
+    #303C8Cs
+    #B4DFE5
+*/
 .Footer {
-  background-color: #0B0C10;
+  background-color: #1F2833;
   padding: 1rem;
 }
 .Footer-text-container {
@@ -10,3 +16,9 @@
   color: #66FCF1;
 }
 
+@media(max-width: 1023px) {
+  .Footer-text-item {
+    color: #66FCF1;
+    font-size: 0.8rem;
+  }
+}

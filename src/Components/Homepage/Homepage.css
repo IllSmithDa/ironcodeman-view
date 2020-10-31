@@ -1,48 +1,100 @@
 /*
-    #F4976C
-    #FBE8A6
+    #0B0C10
+    #1F2833
     #303C8Cs
     #B4DFE5
 */
 .app-container {
-    background-color: #1F2833;
+    background-color: #0B0C10;
+    animation-name: powerColor;
+    animation-duration: 4s;
+}
+@keyframes powerColor {
+    from {background-color: #1F2833;}
+    to {background-color: #0B0C10;}
 }
 .homepage-container {
-    min-height: 950px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
-    padding-top: 50px;
     width: 1023px;
     margin:auto;
+    padding-bottom: 2rem;
+    padding-top: 50px;
 }
 .app-banner {
-    margin-top: 1rem;
     background-color: #0B0C10;
     width: 100%;
-    height: 250px;
+    height: 250px;  
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
 }
+.app-banner div{
+    border-radius: 50%;
+    border-top: #45A29E solid 10px;
+    border-bottom:  #45A29E solid 10px;
+    border-left: #1F2833 solid 10px;
+    border-right: #1F2833 solid 10px;
+    width: 75px;
+    height: 75px;
+    background-color: #1F2833;
+    -webkit-animation: spin 4s linear infinite; /* Safari */
+    animation: spin 4s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg); 
+    background-color: #1F2833;
+  }
+  50% {
+    background-color: #66FCF1;
+  }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+    background-color: #1F2833;
+  }
+}
+  
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+    background-color: #1F2833;
+  }
+  50% {
+    background-color: #66FCF1;
+  }
+  100% { 
+    transform: rotate(360deg); 
+    background-color: #1F2833;
+  }
+}
 .app-banner span {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #66FCF1;
+
 }
+
+
 .card-container {
     grid-gap: 10px;
-    width: 1023px;
+    width: 100%;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.card-container div {
+    width: 100%;
+}
 .card-item {
-    background-color: #0B0C10;
+    background-color: #1F2833;
     width: 100%;
     height: 200px;
     display: flex;
@@ -59,19 +111,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 @media(max-width: 1024px) {
-    .app-container div {
+    .homepage-container{
         width: 100%;
     }
     .app-banner {
-        height: 225px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin: 1rem 0 0 0;
+        width:96%;
+        height: 200px;
+        border-radius: 0;
+        background-color: #0B0C10;
     }
     .app-banner span {
         font-size: 1.5rem;
     }
-    .card-container {
-        width: 95%;
+    .card-container div {
+        width: 98%;
+        margin: auto;
     }
     .card-container{
         display: block;
@@ -80,3 +135,4 @@
         margin-bottom: 1rem;
     }
 }
+

@@ -1,5 +1,11 @@
+/*
+    #0B0C10
+    #1F2833
+    #303C8Cs
+    #B4DFE5
+*/
 .concept-container {
-    background-color: #1F2833;
+    background-color: #0B0C10;
     margin-top: 50px;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -7,7 +13,7 @@
   .contable-container {
     width: 1023px;
     margin: auto;
-    background-color: #0B0C10;
+    background-color: #1F2833;
     border-radius: 5px;
   }
   .contable-item {
@@ -56,27 +62,30 @@
   }
   
 @media(max-width: 1023px) {
-    .contable-container {
-      max-width: 100%;
-    }
-    .contable-header h3 {
-      font-size: 1.5rem;
-    }
-    .contable-title tr {
-      display: none;
-    }
-    .contable-content tr {
-      display: none;
-    }
-    .mobile-contable-content tr {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding-bottom: 2rem;
-      border-bottom: 2px #FFF solid;
-    }
-    .mobile-contable-content tr p {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      color: #FFF;
-    }
+  .contable-item {
+    padding: 1rem;
+  }
+  .contable-container {
+    max-width: 100%;
+  }
+  .contable-header h3 {
+    font-size: 1.5rem;
+  }
+  .contable-title tr {
+    display: none;
+  }
+  .contable-content tr {
+    display: none;
+  }
+  .mobile-contable-content tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+    border-bottom: 2px #FFF solid;
+  }
+  .mobile-contable-content tr p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #FFF;
+  }
 }

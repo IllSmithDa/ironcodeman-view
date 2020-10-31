@@ -5,22 +5,26 @@
   left: 0;
   z-index: 1030;
   height: 50px;
-  background-color: #0B0C10;
+  background-color: #1F2833;
 }
 
 .navbar-fixed div {
   width: 1023px;
   height: 100%;
+
+}
+.desktop-title {
   margin: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
+.mobile-title {
+  display: none;
+}
 .navbar-fixed div span {
-
-  font-size: 1.75em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.75rem;
+  font-family: Impact,Times;
 }
 .navbar-fixed div span a, .navbar-fixed div span a:hover{
   color: #66FCF1;
@@ -29,8 +33,26 @@
 
 @media(max-width: 1023px) {
   .navbar-fixed div {
-    width: 95%;
+    width: 96%;
     margin: auto;
   }
-  
+  .navbar-fixed div span {
+    font-size: 1.5rem;
+  }
+  .desktop-title {
+    display: none;
+  }
+  .mobile-title {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .mobile-title img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }

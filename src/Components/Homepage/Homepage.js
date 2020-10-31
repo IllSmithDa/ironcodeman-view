@@ -29,6 +29,7 @@ export default class Homepage extends Component {
         <Navbar />
         <div className="homepage-container">
           <div className="app-banner">
+            <div></div>
             <span><b>Quick CLI and Concepts</b></span>
           </div>
           <div className="card-container">

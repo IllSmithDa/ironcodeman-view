@@ -1,5 +1,11 @@
+/*
+    #0B0C10
+    #1F2833
+    #303C8Cs
+    #B4DFE5
+*/
 .command-container {
-    background-color: #1F2833;
+    background-color: #0B0C10;
     margin-top: 50px;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -7,7 +13,7 @@
 .comtable-container {
   width: 1023px;
   margin: auto;
-  background-color: #0B0C10;
+  background-color: #1F2833;
   border-radius: 5px;
 }
 .comtable-item {
@@ -44,10 +50,30 @@
   .comtable-header h3 {
       font-size: 1.5rem;
   }
+  
   .comtable-title tr th {
       font-size: 1rem;
   }
   .comtable-content tr th{ 
       font-size: .9rem;
+  }
+  .comtable-title tr {
+    display: none;
+  }
+  .comtable-content tr {
+    display: none;
+  }
+  .mobile-comtable-content tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px #FFF solid;
+  }
+  .mobile-comtable-content tr p {
+    margin-top: 1rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+    color: #FFF;
   }
 }

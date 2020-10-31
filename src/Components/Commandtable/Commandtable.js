@@ -36,6 +36,16 @@ export default class Commandtable extends Component {
                             )
                           )}
                         </tbody>
+                        <tbody className='mobile-comtable-content'>
+                          {post.arr.map((data, index) => 
+                            (
+                              <tr key={post.description}>
+                                <p><b>Command</b>: {data.command}</p>
+                                <p><b>Description</b>: {data.description}</p>
+                              </tr>
+                            )
+                          )}
+                        </tbody>
                       </Table>
                   </div>
                   
