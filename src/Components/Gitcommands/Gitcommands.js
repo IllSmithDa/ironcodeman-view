@@ -34,7 +34,7 @@ export default class Gitcommands extends Component {
     let newArr = [
       {arr: introArr, title:'Git Basic Commands'}, 
       {arr: remoteArr, title:'Git Remote Setup commands'}, 
-      {arr: fetchArr, title:'Syncing your local project with a Github Repository'}, 
+      {arr: fetchArr, title:'Syncing local projects with Github'}, 
       {arr: deleteArr, title:'Git Delete Commands'}
     ];
     this.setState({ 

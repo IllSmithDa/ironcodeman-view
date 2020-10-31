@@ -7,14 +7,15 @@
 .command-container {
   background-color: #0B0C10;
   margin-top: 50px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .comtable-container {
   width: 1023px;
   margin: auto;
-  background-color: #0B0C10;
+  background-color: #1F2833;
   border-radius: 5px;
+  margin: 1rem auto 1rem auto;
 }
 .comtable-item {
   padding: 1rem;
@@ -45,20 +46,30 @@
   display: none;
 }
 @media(max-width: 1023px) {
+  .command-container  {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .comtable-item {
+    padding: 0 1rem 0.5rem 1rem;
+  }
   .comtable-container {
       width: 98%;
       margin: auto;
       background-color: #0B0C10;
+     margin-top: 1rem;
+  }
+  .comtable-header {
+    padding: 0 0 1rem 0;
   }
   .comtable-header h3 {
-      font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  
   .comtable-title tr th {
-      font-size: 1rem;
+    font-size: 1rem;
   }
   .comtable-content tr th{ 
-      font-size: .9rem;
+    font-size: .9rem;
   }
   .comtable-title tr {
     display: none;
@@ -75,8 +86,6 @@
   }
   .mobile-comtable-content tr p {
     margin-top: 1rem;
-    margin-left: .75rem;
-    margin-right: .75rem;
     color: #FFF;
   }
 }
