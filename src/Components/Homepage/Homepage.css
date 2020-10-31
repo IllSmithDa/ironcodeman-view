@@ -76,12 +76,17 @@
   }
 }
 .app-banner span {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-family: Times;
     color: #66FCF1;
-
 }
-
+.app-banner p {
+    display: block;
+    font-size: 2.5rem;
+    font-family: Times;
+    color: #66FCF1;
+    margin-top: 1rem;
+}
 
 .card-container {
     grid-gap: 10px;
@@ -111,6 +116,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 @media(max-width: 1024px) {
+    .app-banner p {
+        display: block;
+        font-size: 1.75rem;
+        font-family: Times;
+        color: #66FCF1;
+        margin-top: 1rem;
+    }
+    .app-banner span {
+        font-size: .9rem;
+        font-family: Times;
+        color: #66FCF1;
+    }
     .homepage-container{
         width: 100%;
     }
@@ -120,9 +137,6 @@
         height: 200px;
         border-radius: 0;
         background-color: #0B0C10;
-    }
-    .app-banner span {
-        font-size: 1.5rem;
     }
     .card-container div {
         width: 98%;

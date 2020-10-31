@@ -30,7 +30,8 @@ export default class Homepage extends Component {
         <div className="homepage-container">
           <div className="app-banner">
             <div></div>
-            <span><b>Quick CLI and Concepts</b></span>
+            <p>IRON CODE MAN</p>
+            <span>Quick CLI and Concepts reference</span>
           </div>
           <div className="card-container">
               {programList.map((post) => 
