@@ -4,18 +4,20 @@
     #303C8Cs
     #B4DFE5
 */
-.Footer {
+.footer {
   background-color: #1F2833;
   padding: 1rem;
 }
-.Footer-text-container {
+.footer-text-container {
   text-align: center;
 }
 
-.Footer-text-item {
+.footer-text-item, .footer-text-item a {
   color: #66FCF1;
 }
-
+.footer-text-item a:hover {
+  color: #FFF;
+}
 @media(max-width: 1023px) {
   .Footer-text-item {
     color: #66FCF1;

@@ -16,11 +16,11 @@ const ProgramList = [
     url: "/django"
   },
   {
-    name: "Javascript Concepts(new)",
+    name: "JavaScript Concepts",
     url: "/javascript"
   },
   {
-    name: "C Concepts(new)",
+    name: "C Concepts",
     url: "/cprogramming"
   }
 ];
