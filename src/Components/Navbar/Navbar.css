@@ -11,13 +11,6 @@
 .navbar-fixed div {
   width: 1023px;
   height: 100%;
-
-}
-.desktop-title {
-  margin: auto;
-  display: none;
-  justify-content: center;
-  flex-direction: column;
 }
 .mobile-title {
   margin: auto;
