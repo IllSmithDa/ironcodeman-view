@@ -7,13 +7,13 @@
 .command-container {
   background-color: #0B0C10;
   margin-top: 50px;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .comtable-container {
   width: 1023px;
   margin: auto;
-  background-color: #1F2833;
+  background-color: #0B0C10;
   border-radius: 5px;
 }
 .comtable-item {
@@ -48,6 +48,7 @@
   .comtable-container {
       width: 98%;
       margin: auto;
+      background-color: #0B0C10;
   }
   .comtable-header h3 {
       font-size: 1.5rem;

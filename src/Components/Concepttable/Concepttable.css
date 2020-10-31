@@ -7,13 +7,13 @@
 .concept-container {
     background-color: #0B0C10;
     margin-top: 50px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .contable-container {
     width: 1023px;
     margin: auto;
-    background-color: #1F2833;
+    background-color: #0B0C10;
     border-radius: 5px;
   }
   .contable-item {
@@ -67,6 +67,7 @@
   }
   .contable-container {
     max-width: 100%;
+    background-color: #0B0C10;
   }
   .contable-header h3 {
     font-size: 1.5rem;
