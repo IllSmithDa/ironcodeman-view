@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Table } from 'reactstrap';
 import GitHubData from '../../Data/GitHubData'
-import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Commandtable from '../Commandtable/Commandtable';
 

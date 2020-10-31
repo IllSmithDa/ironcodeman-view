@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Concepttable from '../Concepttable/Concepttable';
 import JavascriptData from '../../Data/JavascriptData';
 import Es6 from '../../Data/Es6';
-import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 export default class Javascript extends Component {

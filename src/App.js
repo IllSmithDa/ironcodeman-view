@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import axios from 'axios';
 import Homepage from './Components/Homepage/Homepage'
 import Gitcommands from './Components/Gitcommands/Gitcommands';
 import Heroku from './Components/Heroku/Heroku';

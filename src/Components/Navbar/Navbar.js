@@ -9,7 +9,7 @@ export default class NavBar extends Component {
     return (
       <div className="navbar-fixed">
             <div className="mobile-title">
-              <img src="./favicon.ico" onClick={this.goHome}/>
+              <img src="./favicon.ico" onClick={this.goHome} alt="Iron Code Man" />
             </div>
         </div>
     );

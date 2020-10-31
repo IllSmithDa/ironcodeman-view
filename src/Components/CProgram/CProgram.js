@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Concepttable from '../Concepttable/Concepttable';
 import CData from '../../Data/CData';
-import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 export default class CProgram extends Component {

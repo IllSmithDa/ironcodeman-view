@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Table } from 'reactstrap';
 import Commandtable from '../Commandtable/Commandtable';
 import DjangoData from '../../Data/DjangoData';
-import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 export default class Django extends Component {

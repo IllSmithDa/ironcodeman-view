@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Table } from 'reactstrap';
 import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 import './Concepttable.css';
 
 

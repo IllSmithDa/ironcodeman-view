@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Table } from 'reactstrap';
 import Commandtable from '../Commandtable/Commandtable';
 import CommandData from '../../Data/CommandData';
-import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 export default class Command extends Component {
