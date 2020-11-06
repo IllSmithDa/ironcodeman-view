@@ -60,7 +60,7 @@ const JavascriptData = [
     `
   },
   {
-    concept: `this in Object Scope`,
+    concept: `'this' in Object Scope`,
     type: 'this',
     definition: `When a function is called as a method of an object, the function's 'this' is set to the object the method is called on.`,
     example: `
@@ -76,7 +76,7 @@ const JavascriptData = [
     `
   },
   {
-    concept: `this in Constructor`,
+    concept: `'this' in Constructor`,
     type: 'this',
     definition: `When a function is being used as a constructor, 'this' is bound to the new object that 
     is being created`,
@@ -86,6 +86,7 @@ const JavascriptData = [
     }
 
     var newInstance = new newFunc();
+
     // prints out 37
     console.log(newInstance.a);
 
@@ -95,6 +96,7 @@ const JavascriptData = [
     }
     
     var newInstanceB = new newFuncB();
+
     // Will print out 38
     console.log(newInstanceB.a);
     `
@@ -109,14 +111,15 @@ const JavascriptData = [
     example:`
     const b = 'world';
     function funcA() {
-      // local scope
-      const a = 'hello'; 
+        // local scope
+        const a = 'hello'; 
     }
     function funcB() {
-      // prints 'world'
-      console.log(b);
-      // cannot access a from funcA() so will return error
-      console.log(a);
+        // prints 'world'
+        console.log(b);
+
+        // cannot access a from funcA() so will return error
+        console.log(a);
     }
     `
   },
@@ -133,6 +136,7 @@ const JavascriptData = [
     }
     
     var b = 3;
+
     // prints 5
     foo( 2 );
     `
@@ -149,6 +153,7 @@ const JavascriptData = [
 
       // funcA is the inner function
       function funcA() {
+
         // uses variable declared in the parent function  
         console.log(a);  
       }
@@ -200,17 +205,18 @@ const JavascriptData = [
   {
     concept: 'Prototype',
     type: 'functions',
-    definition: `every function has prototype property which is used to 
+    definition: `Every function has a prototype property which is used to 
     attach properties and methods. This property is not enumerable`,
     example:`
-    function Person(first, last, age, eyecolor) {
+    function Person(age, eyecolor) {
       this.age = age;
       this.eyeColor = eyecolor;
-  }
+    }
   
   // attach nationality to object Person
   Person.prototype.nationality = "English";
   const newPerson = new Person(25, 'black');
+
   // prints 'English';
   console.log(newPerson.nationality)
   `
@@ -220,10 +226,11 @@ const JavascriptData = [
     type: 'functions',
     definition: `A function that is executed immediately after it has 
     been created. It invokes itself`,
-    example:`(function() {
+    example:`
+    (function() {
       // all your code here
       ...
-     })();`
+    })();`
   },
     {
     concept: 'Hoisting',
@@ -237,8 +244,10 @@ const JavascriptData = [
     example:`
     function myfunction() {
       myVar = x + 1;
+
       // x declared after it has been used
       var x = 4;
+
       // prints 5
       console.log(myVar);
     }`
@@ -292,9 +301,11 @@ const JavascriptData = [
     }
 
     const bobby = new Person('Bob');
+
     // prints Bob
     console.log(bobby.getName());
     bobby.setName('John');
+
     // prints John
     console.log(bobby.getName());
     `
@@ -336,29 +347,31 @@ const JavascriptData = [
     by keeping a record of the results for the given inputs (usually in a hash map). `,
     example: `
     var fibVal = (function() {
-      creates empty hashmap
-      var memo = {};
-    
-      function functionA(n) {
-        var value;
-        
-        // explicity checks if value of the n is already stored in hashmap
-        if (n in memo) {
-          value = memo[n];
-        } else {
-          // if base value is reached, return it
-          if (n === 0 || n === 1) {
-            value = n;
-          }
-          else {
-            value = functionB(n - 1) + functionB(n - 2);
-            // hashmap is created to store the value for future calls
-            memo[n] = value;
-          }
+        creates empty hashmap
+        var memo = {};
+      
+        function functionA(n) {
+            var value;
+
+            // explicity checks if value of the n is already stored in hashmap
+            if (n in memo) {
+                value = memo[n];
+            } else {
+
+                // if base value is reached, return it
+                if (n === 0 || n === 1) {
+                    value = n;
+                }
+                else {
+                    value = functionB(n - 1) + functionB(n - 2);
+
+                    // hashmap is created to store the value for future calls
+                    memo[n] = value;
+                }
+            }
+          
+            return value;
         }
-    
-        return value;
-      }
     
       return functionA;
     })();
@@ -380,20 +393,21 @@ const JavascriptData = [
     example: `
     // function with empty parameters but arguments still passed
     function funcA() {
+
       // arguments.length counts number of arguments
       if (arguments.length===1) {
-        return funcB(arguments[0]); 
+          return funcB(arguments[0]); 
       } else if (arguments.length===2){
-        return funcC(arguments[0],  arguments[1]);
+          return funcC(arguments[0],  arguments[1]);
       }
     }
 
     function funcB(a) { 
-      return a;
+        return a;
     }
 
     function funcC(b, c) {
-      return b + c;
+        return b + c;
     }
     // returns 5 
     funcA(2, 3) 
@@ -405,8 +419,10 @@ const JavascriptData = [
     definition: `Objects property names that are the number type can only be accessed using bracket notation. `,
     example: `
     const ageGroup = {3: "apples", 10:"oranges"};
+
     // Will print 'apples'
     console.log(ageGroup["3"]);
+
     // Will throw an error as proper
     console.log(ageGroup.3)
     `
@@ -453,8 +469,10 @@ const JavascriptData = [
     var x = 6;
     var y = x;
     var x = 5;
+
     // x changes value to 5 and prints 5
     console.log(x);
+
     // y value will stay the same at 6 as it is a reference 
     console.log(y);
     `
@@ -468,11 +486,12 @@ const JavascriptData = [
     example: `
     ex. 1
     async functionA() {
-      console.log('result A');
+        console.log('result A');
     }
     functionB() {
-      console.log('result B');
+        console.log('result B');
     }
+
     // prints 'result A' then print 'result B'
     functionA().then(functionB);
     `
@@ -484,13 +503,13 @@ const JavascriptData = [
     the try`,
     example: `
     function foo() {
-      try {
-        return 'World';
-      }
-      finally {
-        console.log( "Hello" );
-      }
-      console.log( "will not be reached but finally still runs" );
+        try {
+          return 'World';
+        }
+        finally {
+          console.log( "Hello" );
+        }
+        console.log( "will not be reached but finally still runs" );
     }
     
     `

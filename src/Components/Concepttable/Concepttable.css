@@ -24,7 +24,7 @@
   }
   .contable-header h3 {
     color: #66FCF1;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Times, Arial, Helvetica, sans-serif;
     font-size: 2rem;
   }
   .contable-title {
@@ -32,33 +32,43 @@
   }
 
   .contable-title tr {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    display: none;
+    grid-template-columns: 1fr 2fr 3fr;
   }
   .contable-title tr th{
     font-size: 1.3rem;
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Times, Arial, Helvetica, sans-serif;
     border-top: none;
   }
   .contable-content tr {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr 2fr;
   }
   .mobile-contable-content tr {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+    border-bottom: 2px #FFF solid;
   }
   .contable-content tr th,  .contable-content tr textarea, .mobile-contable-content tr th {
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Times, Arial, Helvetica, sans-serif;
   }
-  
+  .mobile-contable-content tr p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #FFF;
+    font-size: 1.1rem;
+  }
   .contable-content tr textarea, .mobile-contable-content tr textarea {
     margin-top: 10px;
     width: 100%;
-    height: 200px;
+    min-height: 350px;
     background-color: #1F2833;
     color: #FFF;
+    font-family: Times, Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
   }
   
 @media(max-width: 1023px) {
@@ -82,7 +92,7 @@
   }
   .contable-title tr {
     display: none;
-  }
+  }s
   .contable-content tr {
     display: none;
   }
@@ -91,10 +101,12 @@
     grid-template-columns: 1fr;
     padding-bottom: 2rem;
     border-bottom: 2px #FFF solid;
+    font-size: 1rem;
   }
   .mobile-contable-content tr p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #FFF;
+    font-size: 1rem;
   }
 }
