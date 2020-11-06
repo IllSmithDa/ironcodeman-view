@@ -101,12 +101,12 @@
     grid-template-columns: 1fr;
     padding-bottom: 2rem;
     border-bottom: 2px #FFF solid;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .mobile-contable-content tr p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #FFF;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

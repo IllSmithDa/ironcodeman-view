@@ -40,8 +40,8 @@ const JavascriptData = [
     var a = 'Global';
     
     function myFunction() {
-      // 'ths' refers to window object in broswer
-      return this.a;  
+        // 'ths' refers to window object in broswer
+        return this.a;  
     }
 
     // this will find outer global scope var a and return 'Global'
@@ -50,8 +50,8 @@ const JavascriptData = [
     ex. 2
     var obj = {a: 'Custom'};
     function myFunction() {
-      // ths refers to window object in broswer
-      return this.a;  
+        // ths refers to window object in broswer
+        return this.a;  
     }
 
     // bind 'this' to the object using call or apply
@@ -170,37 +170,35 @@ const JavascriptData = [
     a function to access the lexical scope even when the function is being
     invoked outside of its original lexical scope.`,
     example: `
-      ex 1.
-      function foo() {
+    ex 1.
+    function foo() {
         var a = 2;
       
         function bar() {
-          // bar() has access to variable a in the outer scope
-          console.log( a );
+            // bar() has access to variable a in the outer scope
+            console.log( a );
         }
       
         bar(); 
-      }
-      foo();
-
-      ex. 2
-      function foo() {
+    }
+    foo();
+    ex. 2
+    function foo() {
         console.log('baz() will call function bar()')
         var a = 2;
       
         function bar() {
-          console.log( a );
+            console.log( a );
         }
-      
-        return bar;
-      }
-      // calls foo then return the bar function;
-      var baz = foo();
-      
-      // calls bar() and has original scope and access to var a;
-      baz();
-      
-      `
+    
+      return bar;
+    }
+    // calls foo then return the bar function;
+    var baz = foo();
+    
+    // calls bar() and has original scope and access to var a;
+    baz();
+    `
   },
   {
     concept: 'Prototype',
@@ -209,16 +207,16 @@ const JavascriptData = [
     attach properties and methods. This property is not enumerable`,
     example:`
     function Person(age, eyecolor) {
-      this.age = age;
-      this.eyeColor = eyecolor;
+        this.age = age;
+        this.eyeColor = eyecolor;
     }
   
-  // attach nationality to object Person
-  Person.prototype.nationality = "English";
-  const newPerson = new Person(25, 'black');
+    // attach nationality to object Person
+    Person.prototype.nationality = "English";
+    const newPerson = new Person(25, 'black');
 
-  // prints 'English';
-  console.log(newPerson.nationality)
+    // prints 'English';
+    console.log(newPerson.nationality)
   `
   },
   {
@@ -243,13 +241,13 @@ const JavascriptData = [
     context or scope. `,
     example:`
     function myfunction() {
-      myVar = x + 1;
+        myVar = x + 1;
 
-      // x declared after it has been used
-      var x = 4;
+        // x declared after it has been used
+        var x = 4;
 
-      // prints 5
-      console.log(myVar);
+        // prints 5
+        console.log(myVar);
     }`
   },
   {
@@ -259,22 +257,21 @@ const JavascriptData = [
     from other programming languages by having private and public methods, 
     variables in single objects and blocking global access when possible.`,
     example:`
-
     var module1 = (function () {
  
-      var counter = 0;
-     
-      return {
-     
-        incrementCounter: function () {
-          return counter++;
-        },
-     
-        resetCounter: function () {
-          console.log( "counter value prior to reset: " + counter );
-          counter = 0;
-        }
-      };
+        var counter = 0;
+      
+        return {
+        
+            incrementCounter: function () {
+                return counter++;
+            },
+          
+            resetCounter: function () {
+                console.log( "counter value prior to reset: " + counter );
+                counter = 0;
+            }
+        };
      
     })();
        
@@ -293,11 +290,11 @@ const JavascriptData = [
     directly access or modify private properties`,
     example:`
     class Person {
-      constructor(name) {
-          var _name = name
-          this.setName = function(name) { _name = name; }
-          this.getName = function() { return _name; }
-      }
+        constructor(name) {
+            var _name = name
+            this.setName = function(name) { _name = name; }
+            this.getName = function() { return _name; }
+        }
     }
 
     const bobby = new Person('Bob');
@@ -312,15 +309,15 @@ const JavascriptData = [
     
   },
   {
-    concept: `currying`,
+    concept: `Currying`,
     type: 'functions',
     definition: `Currying applies to functions where you pass a subset of arguments
     and recieve a function back that waits for the rest of the argument. `,
     example: `
     var myFirstCurry = function(word) {
-      return function(user) {
-             return [word , ", " , user].join("");
-      };
+        return function(user) {
+            return [word , ", " , user].join("");
+        };
     };
     // first subset of arguments
     let HelloUser = myFirstCurry("Hello");
@@ -394,12 +391,12 @@ const JavascriptData = [
     // function with empty parameters but arguments still passed
     function funcA() {
 
-      // arguments.length counts number of arguments
-      if (arguments.length===1) {
-          return funcB(arguments[0]); 
-      } else if (arguments.length===2){
-          return funcC(arguments[0],  arguments[1]);
-      }
+        // arguments.length counts number of arguments
+        if (arguments.length===1) {
+            return funcB(arguments[0]); 
+        } else if (arguments.length===2){
+            return funcC(arguments[0],  arguments[1]);
+        }
     }
 
     function funcB(a) { 
@@ -435,16 +432,16 @@ const JavascriptData = [
     in a for/in loop, writable - whether property can be changed`,
     example: `
     const obj = {
-      first: 'Jane',
+        first: 'Jane',
     };
     
     console.log(Object.getOwnPropertyDescriptor(obj, 'first'));
     // will print out the following object property 'first'
     {
-      value: 'Jane',
-      writable: true,
-      enumerable: true,
-      configurable: true,
+        value: 'Jane',
+        writable: true,
+        enumerable: true,
+        configurable: true,
     }
     `
   },
@@ -504,10 +501,10 @@ const JavascriptData = [
     example: `
     function foo() {
         try {
-          return 'World';
+            return 'World';
         }
         finally {
-          console.log( "Hello" );
+            console.log( "Hello" );
         }
         console.log( "will not be reached but finally still runs" );
     }

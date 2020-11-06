@@ -36,12 +36,12 @@ export default class Javascript extends Component {
       esArr.push(Es6[i]);
     }
     let allArr = [
-      { arr: functionsArr, title: "JavaScript function concepts"},
-      { arr: variablesArr, title: "JavaScript variable concepts"},
-      { arr: objectsArr, title: "JavaScript object concepts"},
-      { arr: scopeArr, title: "JavaScript scope concepts"},
-      { arr: thisArr, title: "JavaScript this concepts"},
-      { arr: esArr, title: "JavaScript ES6 concepts"},
+      { arr: functionsArr, title: "JavaScript Function Concepts"},
+      { arr: variablesArr, title: "JavaScript Variable Concepts"},
+      { arr: objectsArr, title: "JavaScript Object Concepts"},
+      { arr: scopeArr, title: "JavaScript Scope Concepts"},
+      { arr: thisArr, title: "JavaScript 'this' Concepts"},
+      { arr: esArr, title: "JavaScript ES6 Concepts"},
     ]
 
     this.setState({ 
