@@ -8,81 +8,99 @@ const JavascriptData = [
 
   },
   {
-    concept: `'this' in global scope`,
+    concept: `'this' in Global Scope`,
     type: 'this',
-    definition: `In the global execution context (outside of any function), this refers to the global object
-    In web browsers, the window object is the global object.`,
+    definition: `In the global execution context (outside of any function), 'this' refers to the global object. 
+    In the context of web browsers, the global object is the window object.`,
     example: `
-    console.log(this === window); // true
-    a = 37;
-    console.log(window.a); // 37
+    ex. 1
+    // prints true
+    console.log(this === window);
 
+    ex. 2
+    var a = 37;
+    // prints 37
+    console.log(window.a); 
+
+    ex. 3
+    // Prints Hello 
     this.var1 = "Hello";
-    console.log(window.var1)  // "Hello"
-    console.log(var1)         // "Hello"
+    console.log(window.var1)  
+    console.log(var1)         
     `
   },
   {
-    concept: `'this' in function scope`,
+    concept: `'this' in Function Scope`,
     type: 'this',
     definition: `The value of 'this' in the function scope is determined by
-    how a function is called. To pass a value to this, simply use call or apply`,
+    how a function is called and where the variable gets initiated. To pass a value to this, simply use call or apply`,
     example: `
-    // object passed as the first argument
-    var obj = {a: 'Custom'};
+    ex. 1
+    // variable initiated in global browser context with window object
     var a = 'Global';
     
     function myFunction() {
+      // 'ths' refers to window object in broswer
       return this.a;  
     }
 
-    // this will find outer global scope var a
-    myFunction();          // returns 'Global'
+    // this will find outer global scope var a and return 'Global'
+    myFunction();         
 
-    // bind 'this' to object using call or apply
+    ex. 2
+    var obj = {a: 'Custom'};
+    function myFunction() {
+      // ths refers to window object in broswer
+      return this.a;  
+    }
+
+    // bind 'this' to the object using call or apply
     myFunction.call(obj);    // returns 'Custom'
     myFunction.apply(obj);    // returns 'Custom'
     `
   },
   {
-    concept: `this in object scope`,
+    concept: `this in Object Scope`,
     type: 'this',
     definition: `When a function is called as a method of an object, the function's 'this' is set to the object the method is called on.`,
     example: `
-    var o = {
+    ex. 1
+    var objectA = {
       prop: 37,
-      f: function() {
+      functionA: function() {
         return this.prop;
       }
     };
-    
-    console.log(o.f()); // 37
+    // Will return 37
+    console.log(objectA.functionA());
     `
   },
   {
-    concept: `this in constructor`,
+    concept: `this in Constructor`,
     type: 'this',
     definition: `When a function is being used as a constructor, 'this' is bound to the new object that 
     is being created`,
     example: `
-    function C() {
+    function newFunc() {
       this.a = 37;
     }
 
-    var o = new C();
-    console.log(o.a); // prints 37
+    var newInstance = new newFunc();
+    // prints out 37
+    console.log(newInstance.a);
 
-    function C2() {
+    function newFuncB() {
       this.a = 37;
       return {a: 38};
     }
     
-    o = new C2();
-    console.log(o.a); // prints 38
+    var newInstanceB = new newFuncB();
+    // Will print out 38
+    console.log(newInstanceB.a);
     `
   },
   {
-    concept: `scope`,
+    concept: `Scope`,
     type: 'scope',
     definition: `Determines the visibility of variables by maintaining a look up list of all itentified variables while enforcing 
     rules on how they are accessible to currently executing code. Variables declared outside of a function is global and can be 
@@ -91,7 +109,8 @@ const JavascriptData = [
     example:`
     const b = 'world';
     function funcA() {
-      const a = 'hello'; // local scope
+      // local scope
+      const a = 'hello'; 
     }
     function funcB() {
       // prints 'world'
@@ -102,7 +121,7 @@ const JavascriptData = [
     `
   },
   {
-    concept: `nested scope`,
+    concept: `Nested Scope`,
     type: 'scope',
     definition: `Sometimes multiple layers of scope can exist because of nested functions. The variable will 
     search for a partilcular variable by going each layer of outer scope until it is found or reaches the global scope in 
@@ -114,12 +133,12 @@ const JavascriptData = [
     }
     
     var b = 3;
-    
-    foo( 2 ); // prints 5
+    // prints 5
+    foo( 2 );
     `
   },
   {
-    concept: `lexical scope`,
+    concept: `Lexical Scope`,
     type: 'scope',
     definition: `sets the scope of a variable so that it may only be called 
     from within the block of code in which it is defined.`,
@@ -128,7 +147,7 @@ const JavascriptData = [
 
       const a = "hello"; 
 
-      // funcA is the inner function, a closure
+      // funcA is the inner function
       function funcA() {
         // uses variable declared in the parent function  
         console.log(a);  
@@ -139,14 +158,14 @@ const JavascriptData = [
     `
   },
   {
-    concept: 'closure',
+    concept: 'Closure',
     type: 'scope',
     definition: `inner function has access to outer functions scope. 
     Inner function has access to outer function's variable. Closure allows
     a function to access the lexical scope even when the function is being
     invoked outside of its original lexical scope.`,
     example: `
-      Example 1:
+      ex 1.
       function foo() {
         var a = 2;
       
@@ -159,7 +178,7 @@ const JavascriptData = [
       }
       foo();
 
-      Example 2:
+      ex. 2
       function foo() {
         console.log('baz() will call function bar()')
         var a = 2;
@@ -179,37 +198,35 @@ const JavascriptData = [
       `
   },
   {
-    concept: 'prototype',
+    concept: 'Prototype',
     type: 'functions',
     definition: `every function has prototype property which is used to 
     attach properties and methods. This property is not enumerable`,
     example:`
     function Person(first, last, age, eyecolor) {
-      this.firstName = first;
-      this.lastName = last;
       this.age = age;
       this.eyeColor = eyecolor;
   }
   
   // attach nationality to object Person
   Person.prototype.nationality = "English";
-
-  const newPerson = new Person('John', 'Doe', 25, 'black');
-  console.log(newPerson.nationality)  // prints 'English';
+  const newPerson = new Person(25, 'black');
+  // prints 'English';
+  console.log(newPerson.nationality)
   `
   },
   {
-    concept: 'immediately invoked expression',
+    concept: 'Immediately Invoked Expression',
     type: 'functions',
     definition: `A function that is executed immediately after it has 
     been created. It invokes itself`,
     example:`(function() {
       // all your code here
-      // ...
+      ...
      })();`
   },
     {
-    concept: 'hoisting',
+    concept: 'Hoisting',
     type: 'variables',
     definition: `Javascript moves variables and function declarations
     to the top of the current scope before code executes. Variable are 
@@ -222,11 +239,12 @@ const JavascriptData = [
       myVar = x + 1;
       // x declared after it has been used
       var x = 4;
-      console.log(myVar) // prints 5
+      // prints 5
+      console.log(myVar);
     }`
   },
   {
-    concept: 'module pattern',
+    concept: 'Module Pattern',
     type: 'functions',
     definition: ` It functions very much like a class
     from other programming languages by having private and public methods, 
@@ -250,9 +268,7 @@ const JavascriptData = [
       };
      
     })();
-     
-    // Usage:
-     
+       
     // Increment our counter
     module1.incrementCounter();
      
@@ -261,29 +277,33 @@ const JavascriptData = [
     `
   },
   {
-    concept: 'Private properties, using closures',
+    concept: 'Private Properties using Closures',
     type: 'objects',
     definition: `JavaScript lets you define private properties by using 
     the underscore prefix. However, the user will still be able to 
     directly access or modify private properties`,
     example:`
-    function Rectangle(_length, _breadth) {
+    class Person {
+      constructor(name) {
+          var _name = name
+          this.setName = function(name) { _name = name; }
+          this.getName = function() { return _name; }
+      }
+    }
 
-      this.getDimensions = function () {
-      return { length : _length, breadth : _breadth };
-      };
- 
-      this.setDimension = function (len,bred) {
-      _length = len;
-      _breadth = bred
-      };
- 
-    }`
+    const bobby = new Person('Bob');
+    // prints Bob
+    console.log(bobby.getName());
+    bobby.setName('John');
+    // prints John
+    console.log(bobby.getName());
+    `
+    
   },
   {
     concept: `currying`,
     type: 'functions',
-    definition: `Applies to functions where you pass a subset of arguments
+    definition: `Currying applies to functions where you pass a subset of arguments
     and recieve a function back that waits for the rest of the argument. `,
     example: `
     var myFirstCurry = function(word) {
@@ -310,42 +330,55 @@ const JavascriptData = [
     definition: `Memoization is an optimization technique 
     that speeds up function execution by storing results of 
     expensive operations and returning the cached results 
-    when the same set of inputs occur again. Works when we 
-    know the result of an expensive operation ahead of time`,
+    when the same set of inputs occur again. It works best when we 
+    know the result of an expensive operation ahead of time. Memoization 
+    ensures that a method doesn't run for the same inputs more than once 
+    by keeping a record of the results for the given inputs (usually in a hash map). `,
     example: `
-    function memoizeFunction(func) {
-      var cache = {};
-      return function() {
-           var key = arguments[0];
-           if(cache[key]) {
-           return cache[key];
-           }
-           else {
-           var val = func.apply(this, arguments);
-           cache[key] = val;
-           return val;
-           }
-      };
-    }
-    var fibonacci = memoizeFunction(function(n) {
-         return (n === 0 || n === 1) ? n : fibonacci(n - 1) + fibonacci(n - 2);
-    });
+    var fibVal = (function() {
+      creates empty hashmap
+      var memo = {};
+    
+      function functionA(n) {
+        var value;
+        
+        // explicity checks if value of the n is already stored in hashmap
+        if (n in memo) {
+          value = memo[n];
+        } else {
+          // if base value is reached, return it
+          if (n === 0 || n === 1) {
+            value = n;
+          }
+          else {
+            value = functionB(n - 1) + functionB(n - 2);
+            // hashmap is created to store the value for future calls
+            memo[n] = value;
+          }
+        }
+    
+        return value;
+      }
+    
+      return functionA;
+    })();
     `
   },
   {
-    concept: ` Method overloading`,
+    concept: ` Method Overloading`,
     type: 'functions',
     definition: `Method overloading allows multiple methods 
     to have the same name but different arguments. The compiler 
     or interpreter determines which function to call based on
-     the number of arguments passed. However, Javscript does 
+     the number of arguments passed. However, JavaScript does 
      not natively support method overloading and it will simply 
      use the last defined method rather than matching the number 
-     of arguments like in Java. The closest thing in Javscript is 
+     of arguments like in Java. The closest thing in JavaScript is 
      to have a parent function that accepts any amount of arugments
      and call appropriate child methods based on the number of arguments.
-     Can use if and else if or use switch statements. `,
+     Instead we can use if and else if or use switch statements.  `,
     example: `
+    // function with empty parameters but arguments still passed
     function funcA() {
       // arguments.length counts number of arguments
       if (arguments.length===1) {
@@ -362,31 +395,47 @@ const JavascriptData = [
     function funcC(b, c) {
       return b + c;
     }
-
-    funcA(2, 3) // returns 5 
+    // returns 5 
+    funcA(2, 3) 
     `
   },
   {
-    concept: `javascript objects and number types`,
+    concept: `JavaScript Objects and Number Types`,
     type: 'objects',
-    definition: `objects property names that are the number type can only be accessed using bracket notation`,
+    definition: `Objects property names that are the number type can only be accessed using bracket notation. `,
     example: `
     const ageGroup = {3: "apples", 10:"oranges"};
-    console.log(ageGroup["3"]); // apples​
-    console.log(ageGroup.3) // This will throw an error​
+    // Will print 'apples'
+    console.log(ageGroup["3"]);
+    // Will throw an error as proper
+    console.log(ageGroup.3)
     `
   },
   {
-    concept: `javascript object property attributes`,
+    concept: `JavaScript Object Property Attributes`,
     type: 'objects',
     definition: `Object properties in javascript have 3 attributes with each being true by default: configurable
     atttribute - specifies whether property can be deleted or changed, enumerable - whether property can be returned
     in a for/in loop, writable - whether property can be changed`,
+    example: `
+    const obj = {
+      first: 'Jane',
+    };
+    
+    console.log(Object.getOwnPropertyDescriptor(obj, 'first'));
+    // will print out the following object property 'first'
+    {
+      value: 'Jane',
+      writable: true,
+      enumerable: true,
+      configurable: true,
+    }
+    `
   },
   {
-    concept: `primitive data type`,
+    concept: `Primitive Data Type`,
     type: 'variables',
-    definition: `variable which data is stored directly into variable, is not a object, has no methods and has with 6 
+    definition: `A variable which data is stored directly into variable, is not a object, has no methods and has with 6 
     types: string, number, bool, undefined, null, symbol,`,
     example: `
     var stringVar = 'Hello';
@@ -396,28 +445,42 @@ const JavascriptData = [
     `
   },
   {
-    concept: `reference data type`,
+    concept: `Reference Data Type`,
     type: 'variables',
     definition: `It is a variable which stores another variable name but only its current value of the stored variable. If stored variable value 
     changes the reference data will stay the same.`,
     example: `
-    x = 6;
-    y = x;
-    x = 5;
-    console.log(x); // prints 5
-    console.log(y); // prints 6`
+    var x = 6;
+    var y = x;
+    var x = 5;
+    // x changes value to 5 and prints 5
+    console.log(x);
+    // y value will stay the same at 6 as it is a reference 
+    console.log(y);
+    `
   },
   {
-    concept: `Asynchronous programming`,
+    concept: `Asynchronous Programming`,
     type: 'functions',
     definition: `It is a solution to a javascript issue which is that one block of code will not neccesarily wait until another block
     of code has finished before running. It usually runs synchronously. Asynchronous programmining will force the block of code to wait
-    until the block that is meant to run first is done.`,
+    until the block that is meant to run first is done. The keyword 'async' indicates a asynchronous function.`,
+    example: `
+    ex. 1
+    async functionA() {
+      console.log('result A');
+    }
+    functionB() {
+      console.log('result B');
+    }
+    // prints 'result A' then print 'result B'
+    functionA().then(functionB);
+    `
   },
   {
-    concept: `try and finally`,
+    concept: `Try and Finally`,
     type: 'functions',
-    definition: `'finally' can be used alongside with try and catch or just with try. Code in 'finally' will run no matter what and right after 
+    definition: `The keyword 'finally' can be used alongside with try and catch or just with try. The block in 'finally' will run no matter what and right after 
     the try`,
     example: `
     function foo() {
